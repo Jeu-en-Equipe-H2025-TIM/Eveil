@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 9fd7d70e9508a684bbbd86aa29835691
+  productGUID: 35238f065b23b2f4eb8915a18eeebe58
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: H25Jeu_Eveil_Dev
+  productName: Eveil
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -837,14 +837,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: H25Jeu_Eveil_Dev
+  metroPackageName: Eveil
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: H25Jeu_Eveil_Dev
+  metroApplicationDescription: Eveil
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -915,11 +915,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 0f071aa3-25eb-45c3-879f-c7eccb475da5
+  cloudProjectId: 081f70a1-3e0c-4ed8-998a-9ec53dbc1e7e
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: H25Jeu_Eveil_Dev
-  organizationId: mimile312
+  projectName: Eveil 2025-03-24_10-20-28
+  organizationId: kingkirb0
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
