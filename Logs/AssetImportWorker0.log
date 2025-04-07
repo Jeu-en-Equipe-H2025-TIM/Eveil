@@ -1,29 +1,29 @@
 Using pre-set license
-Built from '6000.0/staging' branch; Version is '6000.0.40f1 (157d81624ddf) revision 1408385'; Using compiler version '193933523'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Education' Language: 'fr' Physical Memory: 32481 MB
+Built from '6000.0/release' branch; Version is '6000.0.45f1 (d91bd3d4e081) revision 14228435'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'fr' Physical Memory: 16126 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\6000.0.40f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\6000.0.45f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/e6207051/Eveil2/Eveil
+C:/Users/mimil/OneDrive - Collège de Maisonneuve/Cegep/SESSION 4/JeuEquipe/Eveil-Dev/Eveil
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57740
+57259
 -job-worker-count
-9
+3
 -background-job-worker-count
 8
 -gc-helper-count
 1
-Successfully changed project path to: C:/Users/e6207051/Eveil2/Eveil
-C:/Users/e6207051/Eveil2/Eveil
+Successfully changed project path to: C:/Users/mimil/OneDrive - Collège de Maisonneuve/Cegep/SESSION 4/JeuEquipe/Eveil-Dev/Eveil
+C:/Users/mimil/OneDrive - Collège de Maisonneuve/Cegep/SESSION 4/JeuEquipe/Eveil-Dev/Eveil
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -59,102 +59,87 @@ C:/Users/e6207051/Eveil2/Eveil
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [34796]  Target information:
+Player connection [1704]  Target information:
 
-Player connection [34796]  * "[IP] 10.80.68.80 [Port] 0 [Flags] 2 [Guid] 1923816615 [EditorId] 1923816615 [Version] 1048832 [Id] WindowsEditor(7,B1166-14) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [1704]  * "[IP] 10.90.96.67 [Port] 0 [Flags] 2 [Guid] 2286176909 [EditorId] 2286176909 [Version] 1048832 [Id] WindowsEditor(7,EmileLaptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [34796] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [34796] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 9
+Player connection [1704] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [1704] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 3
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
 Library Redirect Path: Library/
+Unknown error occurred while loading 'mem://ProjectSettings/DynamicsManager.asset'.
 [Physics::Module] Selected backend.
 [Physics::Module] Name: PhysX
 [Physics::Module] Id: 0xf2b8ea05
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 1.84 ms, found 3 plugins.
+Failed to load 'mem://ProjectSettings/EditorSettings.asset'. File may be corrupted or was serialized with a newer version of Unity.
+Unknown error occurred while loading 'mem://ProjectSettings/Physics2DSettings.asset'.
+Unknown error occurred while loading 'mem://ProjectSettings/MemorySettings.asset'.
+Unknown error occurred while loading 'mem://UserSettings/EditorUserSettings.asset'.
+Failed to load 'mem://Library/SpriteAtlasDatabase.asset'. File may be corrupted or was serialized with a newer version of Unity.
+Multiple managers are loaded of type: NavMeshProjectSettings
+Refreshing native plugins compatible for Editor in 3864.19 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 6000.0.40f1 (157d81624ddf)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/e6207051/Eveil2/Eveil/Assets
+Initialize engine version: 6000.0.45f1 (d91bd3d4e081)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/mimil/OneDrive - Collège de Maisonneuve/Cegep/SESSION 4/JeuEquipe/Eveil-Dev/Eveil/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2488)
-    Vendor:   NVIDIA
-    VRAM:     8018 MB
-    Driver:   32.0.15.6603
-Shader 'Universal Render Pipeline/Nature/SpeedTree7': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Universal Render Pipeline/Nature/SpeedTree7': dependency 'BillboardShader' shader 'Universal Render Pipeline/Nature/SpeedTree7 Billboard' not found
-Shader 'Hidden/Universal Render Pipeline/StencilDeferred': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Hidden/Universal Render Pipeline/FallbackError': fallback shader 'Hidden/Core/FallbackError' not found
-Shader 'Universal Render Pipeline/Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Universal Render Pipeline/Particles/Unlit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Universal Render Pipeline/VR/SpatialMapping/Occlusion': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Universal Render Pipeline/VR/SpatialMapping/Wireframe': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Universal Render Pipeline/Simple Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
-Shader 'Universal Render Pipeline/Particles/Simple Lit': fallback shader 'Universal Render Pipeline/Particles/Unlit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/Simple Lit' not found
-Shader 'Universal Render Pipeline/Nature/SpeedTree8': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'TextMeshPro/Distance Field Overlay': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
-Shader 'Universal Render Pipeline/Baked Lit': fallback shader 'Universal Render Pipeline/Unlit' not found
-Shader 'TextMeshPro/Distance Field SSD': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
-Shader 'Universal Render Pipeline/Nature/SpeedTree7 Billboard': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Universal Render Pipeline/Complex Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Universal Render Pipeline/Unlit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+    Renderer: Intel(R) Iris(R) Plus Graphics (ID=0x8a52)
+    Vendor:   Intel
+    VRAM:     8063 MB
+    Driver:   31.0.101.1999
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56416
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56532
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.004713 seconds.
-- Loaded All Assemblies, in  0.381 seconds
-Native extension for UWP target not found
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.104541 seconds.
+- Loaded All Assemblies, in  5.004 seconds
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.336 seconds
-Domain Reload Profiling: 714ms
-	BeginReloadAssembly (127ms)
+- Finished resetting the current domain, in  1.175 seconds
+Domain Reload Profiling: 6169ms
+	BeginReloadAssembly (1842ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (48ms)
-	LoadAllAssembliesAndSetupDomain (158ms)
-		LoadAssemblies (126ms)
+		CreateAndSetChildDomain (7ms)
+	RebuildCommonClasses (751ms)
+	RebuildNativeTypeToScriptingClass (378ms)
+	initialDomainReloadingComplete (1215ms)
+	LoadAllAssembliesAndSetupDomain (806ms)
+		LoadAssemblies (1754ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (155ms)
-			TypeCache.Refresh (154ms)
-				TypeCache.ScanAssembly (137ms)
+		AnalyzeDomain (773ms)
+			TypeCache.Refresh (769ms)
+				TypeCache.ScanAssembly (719ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (336ms)
+	FinalizeReload (1176ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (293ms)
+		SetupLoadedEditorAssemblies (1015ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (75ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (50ms)
-			ProcessInitializeOnLoadAttributes (110ms)
-			ProcessInitializeOnLoadMethodAttributes (53ms)
+			InitializePlatformSupportModulesInManaged (164ms)
+			SetLoadedEditorAssemblies (12ms)
+			BeforeProcessingInitializeOnLoad (195ms)
+			ProcessInitializeOnLoadAttributes (463ms)
+			ProcessInitializeOnLoadMethodAttributes (182ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -163,126 +148,192 @@ Domain Reload Profiling: 714ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.089 seconds
-Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
-Native extension for UWP target not found
+- Loaded All Assemblies, in  5.566 seconds
+Refreshing native plugins compatible for Editor in 5.64 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Shader 'Universal Render Pipeline/Terrain/Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
-Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
-Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.675 seconds
-Domain Reload Profiling: 1757ms
-	BeginReloadAssembly (162ms)
+- Finished resetting the current domain, in  4.541 seconds
+Domain Reload Profiling: 10080ms
+	BeginReloadAssembly (832ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (20ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (44ms)
-	LoadAllAssembliesAndSetupDomain (829ms)
-		LoadAssemblies (694ms)
+		CreateAndSetChildDomain (143ms)
+	RebuildCommonClasses (279ms)
+	RebuildNativeTypeToScriptingClass (667ms)
+	initialDomainReloadingComplete (666ms)
+	LoadAllAssembliesAndSetupDomain (3090ms)
+		LoadAssemblies (1756ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (229ms)
-			TypeCache.Refresh (173ms)
-				TypeCache.ScanAssembly (157ms)
-			BuildScriptInfoCaches (43ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (675ms)
+		AnalyzeDomain (1865ms)
+			TypeCache.Refresh (1437ms)
+				TypeCache.ScanAssembly (1380ms)
+			BuildScriptInfoCaches (322ms)
+			ResolveRequiredComponents (80ms)
+	FinalizeReload (4546ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (532ms)
+		SetupLoadedEditorAssemblies (3835ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (92ms)
-			ProcessInitializeOnLoadAttributes (343ms)
-			ProcessInitializeOnLoadMethodAttributes (75ms)
-			AfterProcessingInitializeOnLoad (4ms)
-			EditorAssembliesLoaded (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (14ms)
+			BeforeProcessingInitializeOnLoad (531ms)
+			ProcessInitializeOnLoadAttributes (2784ms)
+			ProcessInitializeOnLoadMethodAttributes (455ms)
+			AfterProcessingInitializeOnLoad (36ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 1.33 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (24ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 6.17 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 215 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5968 unused Assets / (4.6 MB). Loaded Objects now: 6690.
-Memory consumption went from 170.1 MB to 165.4 MB.
-Total: 10.403900 ms (FindLiveObjects: 0.698700 ms CreateObjectMapping: 1.347600 ms MarkObjects: 5.315600 ms  DeleteObjects: 3.041100 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 113227.767615 seconds.
-  path: Assets/Scenes/Ouverture.unity
-  artifactKey: Guid(ad71e0cb8ce29aa4cbed2ce8f62e0a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Ouverture.unity using Guid(ad71e0cb8ce29aa4cbed2ce8f62e0a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f61ef4e149383075e3ff3269570db575') in 0.0040954 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+Unloading 214 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5967 unused Assets / (4.0 MB). Loaded Objects now: 6670.
+Memory consumption went from 159.0 MB to 155.0 MB.
+Total: 22.807100 ms (FindLiveObjects: 1.429100 ms CreateObjectMapping: 1.528800 ms MarkObjects: 14.326800 ms  DeleteObjects: 5.519700 ms)
 
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.657 seconds
-Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
-Shader 'Universal Render Pipeline/Autodesk Interactive/AutodeskInteractive': fallback shader 'Hidden/Shader Graph/FallbackError' not found
-Shader 'Universal Render Pipeline/Autodesk Interactive/AutodeskInteractiveTransparent': fallback shader 'Hidden/Shader Graph/FallbackError' not found
-Shader 'Universal Render Pipeline/Autodesk Interactive/AutodeskInteractiveMasked': fallback shader 'Hidden/Shader Graph/FallbackError' not found
-Shader 'Universal Render Pipeline/Nature/SpeedTree8_PBRLit': fallback shader 'Hidden/Shader Graph/FallbackError' not found
-Shader 'Universal Render Pipeline/Nature/SpeedTree9_URP': fallback shader 'Hidden/Shader Graph/FallbackError' not found
-Native extension for UWP target not found
+- Loaded All Assemblies, in  4.660 seconds
+Refreshing native plugins compatible for Editor in 6.90 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.705 seconds
-Domain Reload Profiling: 1360ms
-	BeginReloadAssembly (189ms)
+- Finished resetting the current domain, in  6.437 seconds
+Domain Reload Profiling: 11084ms
+	BeginReloadAssembly (1105ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (28ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (43ms)
-	RebuildCommonClasses (49ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (28ms)
-	LoadAllAssembliesAndSetupDomain (376ms)
-		LoadAssemblies (304ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (269ms)
+	RebuildCommonClasses (298ms)
+	RebuildNativeTypeToScriptingClass (100ms)
+	initialDomainReloadingComplete (218ms)
+	LoadAllAssembliesAndSetupDomain (2924ms)
+		LoadAssemblies (2106ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (171ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (144ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (705ms)
+		AnalyzeDomain (1434ms)
+			TypeCache.Refresh (569ms)
+				TypeCache.ScanAssembly (525ms)
+			BuildScriptInfoCaches (780ms)
+			ResolveRequiredComponents (66ms)
+	FinalizeReload (6439ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (506ms)
+		SetupLoadedEditorAssemblies (4701ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (15ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (95ms)
-			ProcessInitializeOnLoadAttributes (331ms)
-			ProcessInitializeOnLoadMethodAttributes (54ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			SetLoadedEditorAssemblies (41ms)
+			BeforeProcessingInitializeOnLoad (1371ms)
+			ProcessInitializeOnLoadAttributes (2859ms)
+			ProcessInitializeOnLoadMethodAttributes (344ms)
+			AfterProcessingInitializeOnLoad (54ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 1.52 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (65ms)
+Refreshing native plugins compatible for Editor in 7.54 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 23 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5964 unused Assets / (4.7 MB). Loaded Objects now: 6707.
-Memory consumption went from 149.0 MB to 144.3 MB.
-Total: 13.013500 ms (FindLiveObjects: 1.002200 ms CreateObjectMapping: 1.558500 ms MarkObjects: 6.126000 ms  DeleteObjects: 4.325600 ms)
+Unloading 5958 unused Assets / (4.0 MB). Loaded Objects now: 6681.
+Memory consumption went from 138.9 MB to 134.8 MB.
+Total: 26.402400 ms (FindLiveObjects: 1.575900 ms CreateObjectMapping: 1.705700 ms MarkObjects: 16.744500 ms  DeleteObjects: 6.372900 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 257187.375295 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c391582d739b6e62a5220f35cbb167ac') in 0.0681959 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.113533 seconds.
+  path: Assets/PROG
+  artifactKey: Guid(864fb802d8ecf164e8004431f5dcef98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PROG using Guid(864fb802d8ecf164e8004431f5dcef98) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8789dcadbf1f27a3cf74e2fa0bf40f3f') in 0.0048717 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.481941 seconds.
+  path: Assets/_PROG
+  artifactKey: Guid(864fb802d8ecf164e8004431f5dcef98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PROG using Guid(864fb802d8ecf164e8004431f5dcef98) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e73ff7eae99496bde021c5cea578275') in 0.0030631 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.459943 seconds.
+  path: Assets/Animation
+  artifactKey: Guid(32d0be84cd860894fb7cbdff782c33cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation using Guid(32d0be84cd860894fb7cbdff782c33cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6bb546da2f36f71471473ff3e5684669') in 0.0646908 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 8.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5998 unused Assets / (4.4 MB). Loaded Objects now: 6716.
+Memory consumption went from 142.7 MB to 138.3 MB.
+Total: 98.970900 ms (FindLiveObjects: 1.334700 ms CreateObjectMapping: 2.125900 ms MarkObjects: 86.566400 ms  DeleteObjects: 8.939600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 106.821242 seconds.
+  path: Assets/JEU
+  artifactKey: Guid(c04f6a9d52215a442b46aab814e054e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JEU using Guid(c04f6a9d52215a442b46aab814e054e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a21110c945d10ea03322749ef757c387') in 0.0096582 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.975552 seconds.
+  path: Assets/Assets
+  artifactKey: Guid(bd6520c4f9ee5214d8323ae07c6b5ac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets using Guid(bd6520c4f9ee5214d8323ae07c6b5ac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aaeb9f18f2646d87e28958feff92e661') in 0.0058284 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 7.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 28 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5998 unused Assets / (6.3 MB). Loaded Objects now: 6716.
+Memory consumption went from 142.4 MB to 136.2 MB.
+Total: 44.219800 ms (FindLiveObjects: 2.604300 ms CreateObjectMapping: 2.159100 ms MarkObjects: 28.003200 ms  DeleteObjects: 11.450300 ms)
+
+Prepare: number of updated asset objects reloaded= 10
+========================================================================
+Received Import Request.
+  Time since last request: 28.049270 seconds.
+  path: Assets/_PROG/Fin.unity
+  artifactKey: Guid(2d3a6792e07be2e4b920528071247e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PROG/Fin.unity using Guid(2d3a6792e07be2e4b920528071247e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4d0b6aceefd0a564bbe88d3af9e10366') in 0.017594 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.978022 seconds.
+  path: Assets/_PROG/Scenes/Fin.unity
+  artifactKey: Guid(d12c36b9213149d4b94b1d96bb694944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PROG/Scenes/Fin.unity using Guid(d12c36b9213149d4b94b1d96bb694944) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'de4841653cf9dcbb2a8b7e7702b32962') in 0.0029211 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.268028 seconds.
+  path: Assets/_PROG/Scenes/Jeu.unity
+  artifactKey: Guid(7d6354a5a72c4644489aec2cd7b4b05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PROG/Scenes/Jeu.unity using Guid(7d6354a5a72c4644489aec2cd7b4b05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '844c24ea8d51221838c3bf5c2905dfa1') in 0.003511 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
