@@ -61,120 +61,67 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.45f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\_PROG\Scripts\Personnage\playerMovements.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Quetes Misc\queteAffichageUI.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\porteBesoinSignal.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Objets\objetInteraction.cs" />
+    <Compile Include="Assets\JEU\Assets\Scripts\Objets\upgradeInteraction.cs" />
     <Compile Include="Assets\JEU\Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\ascenseurBesoinSignal.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Objets\boutonDebloqueZone.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Puzzle1\puzzle1Manager.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Quetes Misc\queteAssocier.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Managers\gererAccesZones.cs" />
     <Compile Include="Assets\JEU\Assets\QuickOutline\Scripts\Outline.cs" />
+    <Compile Include="Assets\JEU\Assets\Scripts\Objets\flashlight.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\InputSystemUIInputModule.cs" />
-    <Compile Include="Assets\_PROG\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Managers\timerManager.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Objets\ascenseurBesoinSignal.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Objets\objetProximity.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Quetes Misc\queteTriggerZone.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\levierDebloqueZone.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Objets\porteBesoinSignal.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Personnage\playerRaycast.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Objets\carteaccesInteraction.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\carteaccesInteraction.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Managers\questsManager.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Objets\levierInteraction.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\levierInteraction.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Objets\porteBesoinAcces.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Managers\menus.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Personnage\playerGererQuetes.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Personnage\playerGererQuetes.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\boutonDebloqueZone.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Objets\levierDebloqueZone.cs" />
-    <Compile Include="Assets\_PROG\Scripts\InputSystemUIInputModule.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\objetInteraction.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Personnage\playerRaycast.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Personnage\playerMovements.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\boutonInteraction.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\porteOuverture.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Managers\gameManager.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Puzzle1\puzzle1Manager.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Managers\gameManager.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Managers\menus.cs" />
+    <Compile Include="Assets\JEU\Assets\Scripts\Personnage\playerActions.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Personnage\proximityDetection.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Managers\timerManager.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Managers\gererAccesZones.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Objets\flashlight.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Personnage\playerActions.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Quetes Misc\queteAssocier.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Puzzle1\boutonPuzzle1.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Objets\boutonInteraction.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Quetes Misc\queteTriggerZone.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\porteBesoinAcces.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Puzzle1\lumierePuzzle1.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Puzzle1\boutonPuzzle1.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Quetes Misc\queteAffichageUI.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\objetProximity.cs" />
-    <Compile Include="Assets\_PROG\QuickOutline\Scripts\Outline.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Personnage\proximityDetection.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Objets\porteOuverture.cs" />
+    <Compile Include="Assets\JEU\Assets\Scripts\Personnage\playerAttaque.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Managers\questsManager.cs" />
-    <Compile Include="Assets\_PROG\Scripts\Puzzle1\lumierePuzzle1.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\_PROG\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\_PROG\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
-    <None Include="Assets\_PROG\QuickOutline\Resources\Shaders\OutlineFill.shader" />
-    <None Include="Assets\_PROG\QuickOutline\Readme.txt" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\_PROG\QuickOutline\Resources\Shaders\OutlineMask.shader" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Assets\_PROG\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\_PROG\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\JEU\Assets\QuickOutline\Resources\Shaders\OutlineMask.shader" />
-    <None Include="Assets\_PROG\TextMesh Pro\Shaders\TMP_Sprite.shader" />
-    <None Include="Assets\_PROG\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\_PROG\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\_PROG\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
-    <None Include="Assets\_PROG\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\_PROG\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\_PROG\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\_PROG\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\JEU\Assets\QuickOutline\Readme.txt" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\_PROG\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\_PROG\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\_PROG\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\_PROG\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\_PROG\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets\_PROG\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\_PROG\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\JEU\Assets\QuickOutline\Resources\Shaders\OutlineFill.shader" />
-    <None Include="Assets\_PROG\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\_PROG\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\JEU\Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
-    <None Include="Assets\_PROG\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Assets\_PROG\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -650,7 +597,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.visualscripting@7dcdc439b230\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Mono.Cecil">
