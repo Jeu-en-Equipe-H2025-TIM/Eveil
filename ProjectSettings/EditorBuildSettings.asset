@@ -5,27 +5,30 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 1
+    path: Assets/AssetsEveil/Scenes/Ouverture.unity
+    guid: ad71e0cb8ce29aa4cbed2ce8f62e0a57
+  - enabled: 1
+    path: Assets/AssetsEveil/Scenes/Jeu.unity
+    guid: 9572e1d7ab43d5a499f0ca3f16015144
+  - enabled: 1
+    path: Assets/AssetsEveil/Scenes/MenuPrincipal.unity
+    guid: fabcc475e2722d143b5f527a5fa15ab8
+  - enabled: 1
+    path: Assets/AssetsEveil/Scenes/Reglages.unity
+    guid: 4bfc2d12dad6a304fbb81c4987bc636a
+  - enabled: 1
+    path: Assets/AssetsEveil/Scenes/Credits.unity
+    guid: 11ed7531b776ad74b84aef1badbf09eb
+  - enabled: 1
+    path: Assets/AssetsEveil/Scenes/Fin.unity
+    guid: 3efc77b131edd1044a1dcbe240f81235
   - enabled: 0
     path: Assets/Scenes/Menu.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
-    path: Assets/Scenes/Ouverture.unity
-    guid: ad71e0cb8ce29aa4cbed2ce8f62e0a57
-  - enabled: 1
-    path: Assets/Scenes/MenuPrincipal.unity
-    guid: fabcc475e2722d143b5f527a5fa15ab8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Jeu.unity
     guid: db74cfe856a4552408301679b581ada1
-  - enabled: 1
-    path: Assets/Scenes/Reglages.unity
-    guid: 4bfc2d12dad6a304fbb81c4987bc636a
-  - enabled: 1
-    path: Assets/Scenes/Credits.unity
-    guid: 11ed7531b776ad74b84aef1badbf09eb
-  - enabled: 1
-    path: Assets/Scenes/Fin.unity
-    guid: 3efc77b131edd1044a1dcbe240f81235
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
