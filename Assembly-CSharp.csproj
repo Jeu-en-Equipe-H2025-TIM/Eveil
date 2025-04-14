@@ -75,6 +75,7 @@
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\carteaccesInteraction.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\levierInteraction.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Personnage\playerGererQuetes.cs" />
+    <Compile Include="Assets\JEU\Assets\Scripts\Ennemis\ennemiComportement.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\boutonDebloqueZone.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\objetInteraction.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Personnage\playerMovements.cs" />
