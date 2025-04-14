@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9f0ab87fa0ce9944f8570c520fe1d98d
+guid: d5602acf6ed160a4c87e8f6323abc8d8
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -8,82 +8,77 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: ascenceur
-    second: {fileID: 2100000, guid: 69db2cd24c8dfdf4e8cbf39c36a2aa76, type: 2}
+    second: {fileID: -8637121207451851572, guid: 017ca6809287ce94e870f64fb1074786, type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: ascenceur pole
-    second: {fileID: 2100000, guid: fa7514a4ee4d31a4c8e3fec8fc01a9d2, type: 2}
+    second: {fileID: -2067295912684163578, guid: 017ca6809287ce94e870f64fb1074786, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blockedDoor
+    second: {fileID: 2100000, guid: 249c3cc1da3af0f47881efd78a3b892d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: ceiling
-    second: {fileID: 2100000, guid: bc1f8dabcb2c15a4ea8e182d84e4d62d, type: 2}
+    second: {fileID: 2100000, guid: 2eecacc1c4bd18e46b80c731ef154add, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: ceiling_suspendu
-    second: {fileID: 2100000, guid: 6747fd7c11dc648448095cee6e3816e7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: direction
-    second: {fileID: 2100000, guid: 1bf29bd18df32cb48b5cee906bc8bf00, type: 2}
+    second: {fileID: 2100000, guid: 60b126b1c3b99894ea67cbaccc3bddc9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: floor
-    second: {fileID: 2100000, guid: a131fa898167c6247b366e9c49973ec4, type: 2}
+    second: {fileID: 2100000, guid: eb658e08e09ee3f488d6da29811ddca6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: floor_grates
-    second: {fileID: 2100000, guid: eca01b181e5828d4a8742bd55a4a0315, type: 2}
+    second: {fileID: 2100000, guid: 10ae23785a2651b479f664d874631213, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: rail
-    second: {fileID: 2100000, guid: a6879fab236b65c4fbde758f189e97fa, type: 2}
+    second: {fileID: 2100000, guid: 5c7d1cb03d49be74db5511d23ffdcfb9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: rail_base
-    second: {fileID: 2100000, guid: 3f777af00b14f704f83e517930d3c4bf, type: 2}
+    second: {fileID: 2100000, guid: aa0185dd0d058ca408ede5ff9b5bbb8c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: rail_grillage
-    second: {fileID: 2100000, guid: b6564d2927a4f2340a47cc87f5233821, type: 2}
+    second: {fileID: 2100000, guid: 3a2686b4e62cf684a8f047f9f0b9ebd4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: stair
-    second: {fileID: 2100000, guid: 983d95260b0d96943871ed83af0458ef, type: 2}
+    second: {fileID: 2100000, guid: b6ded161e2b319447ac376ea7aaf3e6d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: wall
-    second: {fileID: 2100000, guid: 4883d1ad88d75974caeaef5653e516c2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: wallFlat
-    second: {fileID: 2100000, guid: 4152a015246b393429832ad93b5bc1bb, type: 2}
+    second: {fileID: 2100000, guid: f0494e4a9ff0b1a4dbb280e83b414956, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: wallLargeRoom
-    second: {fileID: 2100000, guid: 47330f7bdbdd54741b503d4fdbad1c4d, type: 2}
+    second: {fileID: 2100000, guid: f8837865f30a45e42bcdecad578a0aaa, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: wallPropre
-    second: {fileID: 2100000, guid: f07c26e3131e81044aafdf1cfed793d4, type: 2}
+    second: {fileID: 2100000, guid: 41285c995266b954f89b1fe1dcb9dde3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: window
-    second: {fileID: 2100000, guid: b8c97c1f06f464443841a95da1073ca4, type: 2}
+      name: windowBorder
+    second: {fileID: 2100000, guid: fbaee35a963cba44798fa98758bbdfc6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
