@@ -47,8 +47,6 @@ public class playerMovements : MonoBehaviour
         gameManager = GameObject.Find("gameManager");
         characterController.enabled = false;
         Invoke("placeJoueur", 0.5f);
-
-
     }
 
     // Update is called once per frame
@@ -124,18 +122,9 @@ public class playerMovements : MonoBehaviour
         //
     }
 
-    public void OnControllerColliderHit(ControllerColliderHit hit)
-    {
-        // Non-trigger
-    }
-
-    public void OnTriggerEnter(Collider other)
-    {
-        // Trigger
-    }
-
     public void placeJoueur()
     {
+        // Teleportation du joueur au début (quand on revient dans le jeu après l'avoir quitter pour une pause ou autre)
         Debug.Log("Set ma position: " + gameManager.GetComponent<gameManager>().positionJoueurPublique);
         this.transform.position = gameManager.GetComponent<gameManager>().positionJoueurPublique;
         characterController.enabled = true;

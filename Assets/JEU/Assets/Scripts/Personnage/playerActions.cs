@@ -48,6 +48,7 @@ public class playerActions : MonoBehaviour
 
     void attaque()
     {
+        // Lancer l'attaque dans son script
         this.GetComponent<playerAttaque>().attaque();
     }
 

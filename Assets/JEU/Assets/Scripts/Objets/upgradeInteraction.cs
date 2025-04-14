@@ -27,7 +27,11 @@ public class upgradeInteraction : MonoBehaviour
     private FieldInfo fieldInfo;
     private Type type;
 
+
+    // Intéractions avec le joueur
     public GameObject Joueur;
+    public float dureeHallucination;
+
 
 
 
@@ -83,6 +87,7 @@ public class upgradeInteraction : MonoBehaviour
                 // L'OBJET FAIT QUELQUE CHOSE
 
                 Joueur.GetComponent<playerActions>().upgradeDebloquer = true;
+                Joueur.GetComponent<playerHallucinations>().gererHallucination(dureeHallucination);
 
                 // ASSOCIER A UNE ZONE!
                 if (estAssocierAUneZone)

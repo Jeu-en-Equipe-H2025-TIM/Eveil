@@ -72,6 +72,7 @@
     <Compile Include="Assets\JEU\Assets\Scripts\Quetes Misc\queteTriggerZone.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\levierDebloqueZone.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Personnage\playerRaycast.cs" />
+    <Compile Include="Assets\JEU\Assets\Scripts\Hallucinations\zonesHallucinations.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\carteaccesInteraction.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\levierInteraction.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Personnage\playerGererQuetes.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="Assets\JEU\Assets\Scripts\Puzzle1\lumierePuzzle1.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Quetes Misc\queteAffichageUI.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\objetProximity.cs" />
+    <Compile Include="Assets\JEU\Assets\Scripts\Personnage\playerHallucinations.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Personnage\playerAttaque.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Managers\questsManager.cs" />
   </ItemGroup>
