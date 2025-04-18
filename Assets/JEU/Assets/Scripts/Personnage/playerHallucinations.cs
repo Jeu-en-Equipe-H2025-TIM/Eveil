@@ -24,12 +24,19 @@ public class playerHallucinations : MonoBehaviour
      * 3: Besoin d'un OnTriggerExit pour lancer le timer pour arrêter l'hallucination
      */
 
-
+    [SerializeField] private GameObject canvas;
     [SerializeField] private GameObject hallucinationGroupe;
+    [SerializeField] private GameObject hallucinationUI;
+    private bool statusHallucination = false;
 
     void Start()
     {
+
+        // Ces deux affectations ne marchent pas
+        canvas = GameObject.Find("Canvas");
         hallucinationGroupe = GameObject.Find("HallucinationCanvas");
+        hallucinationUI = GameObject.Find("Hallucination");
+
     }
 
     /* 
@@ -101,25 +108,42 @@ public class playerHallucinations : MonoBehaviour
 
         Debug.Log("Hallucination prend fin");
 
+        statusHallucination = false;
 
+        // Réduire l'opacité de l'élément UI
+
+        while (hallucinationUI.GetComponent<Image>().color.a > 0 && !statusHallucination)
+        {
+            Debug.Log("FinHallucination: On diminue l'opacité");
+            Debug.Log("Opacité actuelle: =" + hallucinationUI.GetComponent<Image>().color.a + " / 255"); // Debug pour voir l'opacité actuelle de l'élément UI
+            // Changer l'opacité de l'élément UI 
+            Color color = hallucinationUI.GetComponent<Image>().color;
+            color.a -= 0.01f;
+            hallucinationUI.GetComponent<Image>().color = color;
+            yield return null; // On attend une frame
+        }
         // HALLUCINATION ARRÊTE
-        // Progressif? @melanie donc pour l'instant: instant
-        hallucinationGroupe.SetActive(false); // On désactive le canvas d'hallucination
     }
 
     private IEnumerator ProgressionHallucination()
     {
 
-        // hallucinationGroupe est un gameObject vide qui contient les éléments UIs (comme des images)
-        hallucinationGroupe.SetActive(true);
-    
+        statusHallucination = true;
+
+
+        // Augmenter l'opacité de l'élément UI
+
         // On change l'opacité de ces éléments (enfants de hallucinationGroupe)
-        while (hallucinationGroupe.GetComponentInChildren<Image>().color.a < 0.5)
+        while (hallucinationUI.GetComponent<Image>().color.a < 0.2 && statusHallucination)
         {
-            hallucinationGroupe.GetComponentInChildren<Image>().color.a = 0.5;
+            Debug.Log("ProgressionHallucination: On augmente l'opacité");
+            Debug.Log("Opacité actuelle =" + hallucinationUI.GetComponent<Image>().color.a + " / 255");
+            // Changer l'opacité de l'élément UI 
+            Color color = hallucinationUI.GetComponent<Image>().color;
+            color.a += 0.01f;
+            hallucinationUI.GetComponent<Image>().color = color;
             yield return null; // On attend une frame
         }
 
-        yield return new WaitForSeconds(0.01f);
     }
 }
