@@ -65,6 +65,7 @@
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\upgradeInteraction.cs" />
     <Compile Include="Assets\JEU\Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\ascenseurBesoinSignal.cs" />
+    <Compile Include="Assets\JEU\Assets\Scripts\soundsSlider.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Managers\gererAccesZones.cs" />
     <Compile Include="Assets\JEU\Assets\QuickOutline\Scripts\Outline.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\flashlight.cs" />
