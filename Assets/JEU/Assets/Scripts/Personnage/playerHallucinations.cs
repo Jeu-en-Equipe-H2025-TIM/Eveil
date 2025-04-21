@@ -29,8 +29,18 @@ public class playerHallucinations : MonoBehaviour
     [SerializeField] private GameObject hallucinationUI;
     private bool statusHallucination = false;
 
+
+
+    // Dealer avec les zones d'hallucinations qui joue avec les quêtes
+
+    public GameObject questManager;
+    public int delaisTriggerQueteEnSecondes;
+    [SerializeField] private string queteAssociee;
+
     void Start()
     {
+
+        questManager = GameObject.Find("questsManager");
 
         // Ces deux affectations ne marchent pas
         canvas = GameObject.Find("Canvas");
@@ -60,6 +70,14 @@ public class playerHallucinations : MonoBehaviour
                 * 2: Entrer dans une zone qui va trigger une hallucination (qui s'arrête après X de temps) 
                 */
                 Invoke("lancerHallucination", 0f); // On lance l'hallucination 
+
+                // On update la quete (si zone d'hallucinations est associée)
+                if (other.gameObject.GetComponent<zonesHallucinations>().triggerQuete)
+                {
+                    queteAssociee = other.gameObject.GetComponent<zonesHallucinations>().queteAssociee;
+                    Invoke("updateQuete", other.gameObject.GetComponent<zonesHallucinations>().triggerQueteDelais);
+                }
+
                 StartCoroutine(FinHallucination(other.gameObject.GetComponent<zonesHallucinations>().dureeHallucination));  // On lance la coroutine pour arrêter l'hallucination et on lui donne la qte de temps qu'il attend avant de finir
             }
             else
@@ -69,6 +87,12 @@ public class playerHallucinations : MonoBehaviour
                 */
                 Invoke("lancerHallucination", 0f); // On lance l'hallucination 
 
+                // On update la quete (si zone d'hallucinations est associée)
+                if (other.gameObject.GetComponent<zonesHallucinations>().triggerQuete)
+                {
+                    queteAssociee = other.gameObject.GetComponent<zonesHallucinations>().queteAssociee;
+                    Invoke("updateQuete", other.gameObject.GetComponent<zonesHallucinations>().triggerQueteDelais);
+                }
             }
 
         }
@@ -98,8 +122,6 @@ public class playerHallucinations : MonoBehaviour
 
         // Si progressif: 
         StartCoroutine("ProgressionHallucination");
-        
-
     }
 
     private IEnumerator FinHallucination(float dureeAvantArret)
@@ -145,5 +167,21 @@ public class playerHallucinations : MonoBehaviour
             yield return null; // On attend une frame
         }
 
+    }
+
+
+    private void updateQuete()
+    {
+
+        if (questManager.GetComponent<questsManager>().listeQuetes[0] == queteAssociee)
+        {
+            questManager.GetComponent<questsManager>().queteTrigger(0); // 0 car on gere deja le delais dans le onTriggerEnter
+        }
+        else
+        {
+            Debug.Log("Le joueur a skip une quete..?");
+            Debug.Log("ZONE: Quete associee = " + queteAssociee);
+            Debug.Log("ZONE: Quete [0] (actuelle) du manager = " + questManager.GetComponent<questsManager>().listeQuetes[0]);
+        }
     }
 }

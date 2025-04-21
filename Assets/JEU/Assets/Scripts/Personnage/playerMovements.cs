@@ -18,7 +18,6 @@ public class playerMovements : MonoBehaviour
         public float multiplicateurMarche;
         public float multiplicateurCourse;
 
-
     public float vitesseRotation;
 
     float deplacementVertical;
@@ -41,6 +40,7 @@ public class playerMovements : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         Cursor.lockState = CursorLockMode.Locked;
         characterController = GetComponent<CharacterController>();
 
@@ -52,8 +52,10 @@ public class playerMovements : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Garde la sensibilité à jour
+        vitesseRotation = PlayerPrefs.GetFloat("sensibiliteSouris", 110);
         // INPUTS MOUVEMENTS HORIZONTAUX 
-            if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift))
             {
             courseActive = true;
             }

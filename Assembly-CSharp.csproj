@@ -97,6 +97,7 @@
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\objetProximity.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Personnage\playerHallucinations.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Personnage\playerAttaque.cs" />
+    <Compile Include="Assets\JEU\Assets\Scripts\SensiSlider.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Managers\questsManager.cs" />
   </ItemGroup>
   <ItemGroup>
