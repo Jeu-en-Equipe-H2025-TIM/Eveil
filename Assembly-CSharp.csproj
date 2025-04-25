@@ -66,6 +66,8 @@
     <Compile Include="Assets\JEU\Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\ascenseurBesoinSignal.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\soundsSlider.cs" />
+    <Compile Include="Assets\JEU\Assets\Scripts\Dialogues\dialoguesZone.cs" />
+    <Compile Include="Assets\JEU\Assets\Scripts\Dialogues\dialoguesDeleteZone.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Managers\gererAccesZones.cs" />
     <Compile Include="Assets\JEU\Assets\QuickOutline\Scripts\Outline.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\flashlight.cs" />
@@ -92,6 +94,7 @@
     <Compile Include="Assets\JEU\Assets\Scripts\Quetes Misc\queteAssocier.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Puzzle1\boutonPuzzle1.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\porteBesoinAcces.cs" />
+    <Compile Include="Assets\JEU\Assets\Scripts\Dialogues\dialoguesManager.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Puzzle1\lumierePuzzle1.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Quetes Misc\queteAffichageUI.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\objetProximity.cs" />

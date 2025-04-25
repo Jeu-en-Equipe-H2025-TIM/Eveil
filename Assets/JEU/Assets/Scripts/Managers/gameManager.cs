@@ -10,6 +10,7 @@ public class gameManager : MonoBehaviour
     public Canvas canvas;
     public GameObject audioManager;
     public GameObject questsManager;
+    public GameObject dialoguesManager;
     public GameObject joueur;
 
 
@@ -44,6 +45,7 @@ public class gameManager : MonoBehaviour
         DontDestroyOnLoad(canvas);
         DontDestroyOnLoad(audioManager);
         DontDestroyOnLoad(questsManager);
+        DontDestroyOnLoad(dialoguesManager);
         // Comme �a, on n'a le canvas et gamemanager QU'UNE SEULE FOIS (duplication � cause du DontDestroyOnLoad) car on ne revient jamais � la scene "Ouverture"
         SceneManager.LoadScene("MenuPrincipal");
     }

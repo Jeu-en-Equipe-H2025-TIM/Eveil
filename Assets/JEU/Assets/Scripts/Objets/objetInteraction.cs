@@ -27,9 +27,19 @@ public class objetInteraction : MonoBehaviour
     private FieldInfo fieldInfo;
     private Type type;
 
+    // Dialogues
+    public GameObject dialogueManager;
+    public Boolean dialogueLineaire;
+    public Boolean dialogueAide;
+    public Boolean dialogueRandom;
+    private String dialogueListeAssociee;
+    public int positionDuTexteDansLaListe;
+    public float dureeSurEcran;
+
 
     private void Start()
     {
+        dialogueManager = GameObject.Find("dialoguesManager");
         questsManager = GameObject.Find("questsManager");
         gameManager = GameObject.Find("gameManager");
 
@@ -109,10 +119,34 @@ public class objetInteraction : MonoBehaviour
                         Debug.Log("ZONE: Quete associee = " + queteAssociee);
                         Debug.Log("ZONE: Quete [0] (actuelle) du manager = " + questsManager.GetComponent<questsManager>().listeQuetes[0]);
                     }
-
-
-
                 }
+
+
+                // ASSOCIER A UN DIALOGUE 
+
+                if (dialogueLineaire || dialogueAide || dialogueRandom)
+                {
+
+                    if (dialogueLineaire)
+                    {
+                        dialogueListeAssociee = "lineaire";
+                    }
+                    else if (dialogueAide)
+                    {
+                        dialogueListeAssociee = "aide";
+                    }
+                    else if (dialogueRandom)
+                    {
+                        dialogueListeAssociee = "random";
+                    }
+                    else
+                    {
+                        Debug.Log("Je: " + this.gameObject.name + " n'a pas de liste de dialogues associée! Tu as oublié de checkmark l'une des trois options!");
+                    }
+
+                    dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger(dialogueListeAssociee, positionDuTexteDansLaListe, dureeSurEcran);
+                }
+
                 // Apres avoir pick up la carte, la d�truire
                 Destroy(this.gameObject);
                 // 
