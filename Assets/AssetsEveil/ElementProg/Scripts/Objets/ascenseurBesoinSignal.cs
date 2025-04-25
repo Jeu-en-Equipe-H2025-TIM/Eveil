@@ -69,10 +69,10 @@ public class ascenseurBesoinSignal : MonoBehaviour
         // Si pas actuellement utiliser
         if (!enMouvement)
         {
-            // Si debloquer (levier activé)
+            // Si debloquer (levier activï¿½)
             if (statusZoneAssocier)
             {
-                this.GetComponent<MeshRenderer>().material.color = Color.green;
+                //this.GetComponent<MeshRenderer>().material.color = Color.green;
                 if (hauteurActuelle >= hauteurHaut)
                 {
                     enMouvement = true;
@@ -92,7 +92,7 @@ public class ascenseurBesoinSignal : MonoBehaviour
             else
             {
                 // Do nothing
-                this.GetComponent<MeshRenderer>().material.color = Color.red;
+                //this.GetComponent<MeshRenderer>().material.color = Color.red;
 
                 canGoOffline = false;
             }

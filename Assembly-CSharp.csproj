@@ -62,8 +62,10 @@
   <ItemGroup>
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Puzzle1\boutonPuzzle1.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Objets\porteOuverture.cs" />
+    <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Objets\flashlight.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Puzzle1\lumierePuzzle1.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Managers\gererAccesZones.cs" />
+    <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Personnage\playerActions.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Objets\ascenseurBesoinSignal.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Objets\carteaccesInteraction.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Puzzle1\puzzle1Manager.cs" />
@@ -76,7 +78,9 @@
     <Compile Include="Assets\AssetsEveil\ElementProg\QuickOutline\Scripts\Outline.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\InputSystemUIInputModule.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Managers\timerManager.cs" />
+    <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Personnage\playerAttaque.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Personnage\playerMovements.cs" />
+    <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Ennemis\ennemiComportement.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Quetes Misc\queteAffichageUI.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Personnage\playerGererQuetes.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Objets\porteBesoinAcces.cs" />

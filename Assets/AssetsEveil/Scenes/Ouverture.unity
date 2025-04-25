@@ -1413,10 +1413,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   listeQuetes:
-  - Quetes 1! WOAW
-  - Quete 2! ATTEINDRE LA RIVIERE
-  - EN RAB
-  - Waffles
+  - BIENVENUE
+  - CHERCHE KEYCARD
+  - OUVRE PORTE
+  - ...
+  - TROUVE NOUVEAU CHEMIN
   - EN RAB 3
   - EN RAB 4
   - AVOIR 1 QUETE D'EXTRA EN DERNIER (QUI FAIT RIEN)
@@ -2699,7 +2700,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f38b8fd77b6b8ea4595119f146314cf6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ee90290ba52da7449b5ece05ca786609, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3311,6 +3312,10 @@ MonoBehaviour:
   accesPorteTuto2: 0
   debloqueScannerTuto2: 0
   accesPorteScannerTuto2: 0
+  accesMonteCharge: 0
+  accesForklift: 0
+  debloqueForklift: 0
+  accesForkliftMonte: 0
   debloqueAccesZone1: 0
   ascenseur1: 0
 --- !u!4 &1922440714
@@ -3546,7 +3551,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1922440711}
         m_TargetAssemblyTypeName: menus, Assembly-CSharp
-        m_MethodName: accueil
+        m_MethodName: quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

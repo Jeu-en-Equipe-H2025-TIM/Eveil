@@ -1,7 +1,14 @@
+
+// Your editor-specific code here
+
 using System.Reflection;
 using UnityEngine;
 using System;
+
+#if UNITY_EDITOR
 using UnityEditor.Experimental.GraphView;
+#endif
+
 
 public class porteBesoinAcces : MonoBehaviour
 {

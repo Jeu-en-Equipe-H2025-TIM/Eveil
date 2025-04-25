@@ -4,7 +4,7 @@ using System;
 
 public class levierDebloqueZone : MonoBehaviour
 {
-    // Variables generales de detection du joueur et si le joueur intéragit avec l'objet
+    // Variables generales de detection du joueur et si le joueur intï¿½ragit avec l'objet
     private bool proximiteJoueur;
     private bool doSomething;
 
@@ -60,7 +60,7 @@ public class levierDebloqueZone : MonoBehaviour
 
                 if (estBloquer)
                 {
-                    // Version levier necessite d'être debloquer (objet, etc.)
+                    // Version levier necessite d'ï¿½tre debloquer (objet, etc.)
                     if (checkSiDebloquer())
                     {
                      Invoke("interactionLevier", 0f);
@@ -188,6 +188,6 @@ public class levierDebloqueZone : MonoBehaviour
 
     public void animationBouton()
     {
-        this.GetComponent­<Animator>().SetTrigger("AppuyerButton");
+        this.GetComponent<Animator>().SetTrigger("AppuyerButton");
     }
 }
