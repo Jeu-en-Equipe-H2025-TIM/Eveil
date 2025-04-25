@@ -91,6 +91,7 @@
     <Compile Include="Assets\JEU\Assets\Scripts\Personnage\playerActions.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Personnage\proximityDetection.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Managers\timerManager.cs" />
+    <Compile Include="Assets\JEU\Assets\Scripts\Hallucinations\playerHallucinations.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Quetes Misc\queteAssocier.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Puzzle1\boutonPuzzle1.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\porteBesoinAcces.cs" />
@@ -98,7 +99,6 @@
     <Compile Include="Assets\JEU\Assets\Scripts\Puzzle1\lumierePuzzle1.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Quetes Misc\queteAffichageUI.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\objetProximity.cs" />
-    <Compile Include="Assets\JEU\Assets\Scripts\Personnage\playerHallucinations.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Personnage\playerAttaque.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\SensiSlider.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Managers\questsManager.cs" />
