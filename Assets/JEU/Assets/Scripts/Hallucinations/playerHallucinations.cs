@@ -27,7 +27,9 @@ public class playerHallucinations : MonoBehaviour
     [SerializeField] private GameObject canvas;
     [SerializeField] private GameObject hallucinationGroupe;
     [SerializeField] private GameObject hallucinationUI;
-    private bool statusHallucination = false;
+
+    
+    public bool statusHallucination = false;
 
 
 

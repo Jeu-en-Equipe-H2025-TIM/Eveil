@@ -65,7 +65,6 @@
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\upgradeInteraction.cs" />
     <Compile Include="Assets\JEU\Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\ascenseurBesoinSignal.cs" />
-    <Compile Include="Assets\JEU\Assets\Scripts\soundsSlider.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Dialogues\dialoguesZone.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Dialogues\dialoguesDeleteZone.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Managers\gererAccesZones.cs" />
@@ -76,6 +75,8 @@
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\levierDebloqueZone.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Personnage\playerRaycast.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Hallucinations\zonesHallucinations.cs" />
+    <Compile Include="Assets\JEU\Assets\Scripts\UIs\soundsSlider.cs" />
+    <Compile Include="Assets\JEU\Assets\Scripts\UIs\SensiSlider.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\carteaccesInteraction.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\levierInteraction.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Personnage\playerGererQuetes.cs" />
@@ -100,7 +101,6 @@
     <Compile Include="Assets\JEU\Assets\Scripts\Quetes Misc\queteAffichageUI.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\objetProximity.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Personnage\playerAttaque.cs" />
-    <Compile Include="Assets\JEU\Assets\Scripts\SensiSlider.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Managers\questsManager.cs" />
   </ItemGroup>
   <ItemGroup>

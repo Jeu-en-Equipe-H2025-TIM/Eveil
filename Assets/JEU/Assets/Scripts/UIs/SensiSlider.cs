@@ -11,7 +11,8 @@ public class SensiSlider : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     // Update is called once per frame
-    void Update()
+
+    public void changerSensi()
     {
         PlayerPrefs.SetFloat("sensibiliteSouris", sensiSlider.value);
     }

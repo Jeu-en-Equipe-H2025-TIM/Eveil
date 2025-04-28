@@ -29,9 +29,13 @@ public class ennemiComportement : MonoBehaviour
     public float forcePushback;
     public float durationPushback;
 
-
     // Vie
     public float qteVie;
+
+    // Changement via hallucination
+    public GameObject joueur;
+    private bool peutChanger = true;
+    private bool estMonstre = false;
 
     // Si l'on veut que l'ennemi navigue à travers une liste de points déterminés à l'avance, de-comment ces deux variables
     //public List<Transform> listesDePointsDeRepos;
@@ -47,6 +51,8 @@ public class ennemiComportement : MonoBehaviour
         //zoneRepos = listesDePointsDeRepos[pointer]; // Si l'on veut que l'ennemi navigue à travers une liste de points déterminés à l'avance, de-comment ceci
 
         cibleTransform = cible.transform;
+
+        joueur = GameObject.Find("Player");
     }
 
     // Update is called once per frame
@@ -70,6 +76,14 @@ public class ennemiComportement : MonoBehaviour
                 randomWaitTime = UnityEngine.Random.Range(0f, 2f);
                 Invoke("nouvelleDestination", randomWaitTime);
             }
+        }
+
+        if (joueur.GetComponent<playerHallucinations>().statusHallucination && peutChanger)
+        {
+            Invoke("toggleModeHallucination", 0f); // Si c'est true + on peut re-changer (animation de changement est fini)
+        } else
+        {
+            Invoke("toggleModeHallucination", 0f); // Si c'est false + on peut re-changer (animation de changement est fini)
         }
 
 
@@ -168,5 +182,32 @@ public class ennemiComportement : MonoBehaviour
         this.GetComponent<NavMeshAgent>().enabled = true;
 
         yield return default;
+    }
+
+
+    IEnumerator toggleModeHallucination()
+    {
+        peutChanger = false;
+
+        // LANCER L'ANIMATION ICI 
+
+        if (estMonstre)
+        {
+            // ANIMATION REDEVIENT NORMAL
+
+            estMonstre = false;
+        } else
+        {
+            // ANIMATION DEVIENT MONSTRE
+
+            estMonstre = true;
+        }
+
+        yield return new WaitForSeconds(1f); // CHANGER 1F POUR DUREE DE L'ANIMATION @WICHARDSON
+
+        peutChanger = true;
+
+
+
     }
 }
