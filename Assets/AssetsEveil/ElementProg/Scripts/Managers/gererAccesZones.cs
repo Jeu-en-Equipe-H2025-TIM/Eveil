@@ -42,6 +42,8 @@ public class gererAccesZones : MonoBehaviour
     public bool accesPorteScannerTuto2 = false;
 
     public bool accesMonteCharge = false;
+    public bool accesMonteChargeBoss = false;
+    
     
     public bool accesForklift = false;
     public bool debloqueForklift = false;

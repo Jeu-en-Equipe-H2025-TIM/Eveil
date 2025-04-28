@@ -117,7 +117,7 @@ public class ennemiComportement : MonoBehaviour
         // Logique de push-back
         // Ne peut pas re-utiliser le rigidbody can on controle les mouvements par characterController + les deux ne jouent pas bien ensemble
         // CharacterController.Move() donne le sentiment de teleportation quand fait en 1 fois, donc co-routine pour le faire progressivement (effet de push-back illusoire)
-
+        Debug.Log("ROOMBA: Pousse Joueur");
         StartCoroutine(IncrementationDeLaPoussee(direction, forcePushback, durationPushback));
         
 
@@ -128,11 +128,13 @@ public class ennemiComportement : MonoBehaviour
 
     IEnumerator IncrementationDeLaPoussee(Vector3 direction, float force, float duration)
     {
+        Debug.Log("ROOMBA: Incremente la poussée");
         float tempsPasser = 0;
         float vitesse = force / duration; // On veut une vitesse constante
 
         while (tempsPasser < duration)
         {
+            Debug.Log("ROOMBA: Incrémente: "+tempsPasser);
             cible.GetComponent<CharacterController>().Move(direction * vitesse * Time.deltaTime); // on pushback
             tempsPasser += Time.deltaTime; // on incremente le temps passé
             yield return null; // return null attend 1 frame

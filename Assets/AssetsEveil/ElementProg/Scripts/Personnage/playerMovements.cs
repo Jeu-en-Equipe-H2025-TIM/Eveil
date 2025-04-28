@@ -25,7 +25,7 @@ public class playerMovements : MonoBehaviour
         public float multiplicateurCourse;
 
 
-    public float vitesseRotation;
+    private float vitesseRotation;
 
     float deplacementVertical;
         public float gravity = 9.81f;
@@ -60,6 +60,7 @@ public class playerMovements : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        vitesseRotation = PlayerPrefs.GetFloat("sensibiliteSouris", 110);
         // INPUTS MOUVEMENTS HORIZONTAUX 
             if (Input.GetKey(KeyCode.LeftShift))
             {

@@ -22,6 +22,11 @@ public class proximityDetection : MonoBehaviour
             
             canInteract = true;
         }
+
+       if (other.gameObject.tag == "ennemi")
+        {
+            other.GetComponent<ennemiComportement>().atteintJoueur();
+        }
     }
 
     private void OnTriggerExit(Collider other)
