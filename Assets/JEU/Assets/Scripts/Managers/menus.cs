@@ -79,6 +79,13 @@ public class menus : MonoBehaviour
 
     }
 
+    public void ouverture()
+    {
+
+        StartCoroutine(fonduChangerSceneDefondu("Ouverture"));
+
+    }
+
     public void accueil()
     {
         Debug.Log("Bouton UI: Accueil (menu principal)");
@@ -192,7 +199,7 @@ public class menus : MonoBehaviour
     // CHANGEMENT DE SCENE (PARENT FONDU CHANGER SCENE DE FONDU) + 2 DEPENDANCES (FONDU AU NOIR ET FONDU AU VISIBLE)
     //
 
-    private IEnumerator fonduChangerSceneDefondu(string nomDeScene)
+    public IEnumerator fonduChangerSceneDefondu(string nomDeScene)
     {
         //GetComponent<AudioSource>().PlayOneShot(sonUI);
         yield return StartCoroutine(fonduAuNoir());

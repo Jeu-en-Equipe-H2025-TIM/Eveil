@@ -84,9 +84,11 @@
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\boutonDebloqueZone.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\objetInteraction.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Personnage\playerMovements.cs" />
+    <Compile Include="Assets\JEU\Assets\Scripts\Fins\finAI.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\boutonInteraction.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Objets\porteOuverture.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Managers\gameManager.cs" />
+    <Compile Include="Assets\JEU\Assets\Scripts\Fins\finBonne.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Puzzle1\puzzle1Manager.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Managers\menus.cs" />
     <Compile Include="Assets\JEU\Assets\Scripts\Personnage\playerActions.cs" />
