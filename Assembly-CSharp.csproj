@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Puzzle1\boutonPuzzle1.cs" />
+    <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Dialogue\dialoguesManager.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Objets\porteOuverture.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Objets\flashlight.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\UI\sensiSlider.cs" />
@@ -70,6 +71,7 @@
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Objets\ascenseurBesoinSignal.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Objets\carteaccesInteraction.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Puzzle1\puzzle1Manager.cs" />
+    <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Objets\upgradeInteraction.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Objets\porteBesoinSignal.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Hallucination\playerHallucinations.cs" />
@@ -79,6 +81,8 @@
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Personnage\playerRaycast.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Objets\objetProximity.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\QuickOutline\Scripts\Outline.cs" />
+    <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Dialogue\dialoguesZone.cs" />
+    <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Dialogue\dialoguesDeleteZone.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\InputSystemUIInputModule.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\Managers\timerManager.cs" />
     <Compile Include="Assets\AssetsEveil\ElementProg\Scripts\UI\uiCredits.cs" />

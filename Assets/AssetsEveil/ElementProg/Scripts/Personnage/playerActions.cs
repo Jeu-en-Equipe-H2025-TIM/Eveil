@@ -43,7 +43,7 @@ public class playerActions : MonoBehaviour
             flashlight.SetActive(true);
 
         }
-            
+
     }
 
     void attaque()

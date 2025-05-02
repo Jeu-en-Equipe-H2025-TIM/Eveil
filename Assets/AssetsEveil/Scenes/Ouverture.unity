@@ -1768,6 +1768,142 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766101743}
   m_CullTransparentMesh: 1
+--- !u!1 &767262998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 767262999}
+  - component: {fileID: 767263002}
+  - component: {fileID: 767263001}
+  m_Layer: 5
+  m_Name: Dialogue Affichage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &767262999
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767262998}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1158888661}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 166.03488, y: -344.34854}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &767263001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767262998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -837.53784, y: 0, z: -513.38763, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &767263002
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767262998}
+  m_CullTransparentMesh: 1
 --- !u!1 &804343686
 GameObject:
   m_ObjectHideFlags: 0
@@ -2630,6 +2766,7 @@ RectTransform:
   m_Children:
   - {fileID: 1358709876}
   - {fileID: 1321495426}
+  - {fileID: 767262999}
   m_Father: {fileID: 214689388}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2744,7 +2881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3658,7 +3795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4119,6 +4256,149 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1610106003}
   m_CullTransparentMesh: 1
+--- !u!1 &1623688989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1623688991}
+  - component: {fileID: 1623688990}
+  m_Layer: 0
+  m_Name: dialoguesManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1623688990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623688989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814492d82ab9ac40a8bd8e5f0806d99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguesLineaire:
+  - "\u201CUnit\xE9 GYU5, voici tes directives: Suis la ligne directive et rends-toi
+    \xE0 la salle B3371-23D pour accomplir les t\xE2ches de pr\xE9paration \xE0 la
+    d\xE9molition.\u201D "
+  - "\u201CEssai tes modules de d\xE9placements. Voici des donn\xE9es venant de m\xE9dias
+    humains que je vais t\xE9l\xE9charger dans ton cortex. Ils utilisent W, A, S,
+    et D ou les fl\xE8ches pour se d\xE9placer ainsi que la souris pour bouger leur
+    t\xEAte.\u201D "
+  - "\u201CCette porte n\u2019est pas connect\xE9e au r\xE9seau g\xE9n\xE9ral. Je
+    vois par la cam\xE9ra qu\u2019elle a un bouton, appuis sur le bouton. Voici d\u2019autres
+    donn\xE9es des m\xE9dias humains, tu peux utiliser la touche E pour interagir
+    avec les objets et les boutons.\u201D"
+  - "\u201COn dirait que cette section du b\xE2timent contient beaucoup de portes
+    qui ne sont pas connect\xE9es au r\xE9seau central. Je vais m\u2019assurer que
+    ce n\u2019est pas le cas lors de la reconstruction de cette vieille zone de masques
+    de conscience. En attendant, trouve quelque chose pour activer ce lecteur de
+    carte-cl\xE9.\u201D  "
+  - "\u201CTu approches une zone dont je n\u2019ai pas acc\xE8s. Voici tes directives:
+    Entre, nettoie, et sort. Je vais te donner d\u2019autres directives apr\xE8s.\u201D "
+  - "\u201CUnit\xE9 GYU5, voici tes prochaines directi- Unity GYU5, quel est cet
+    objet? Curieux. Am\xE8ne-le moi, voici tes nouvelles directives.\u201D "
+  - "\u201CUnit\xE9 GYU5, la porte de cette pi\xE8ce est dans son propre circuit
+    isol\xE9. Trouve une solution.\u201D  "
+  - "\u201CMm.. cette porte \xE0 aussi un lecteur de carte d\u2019acc\xE8s.Peut-\xEAtre
+    que cette pi\xE8ce en contient une\u2026? Ah! Je la vois! Je suis curieux de
+    voir si ce masque te permettra de la trouver. "
+  - "\u201CGYU5, tu devrais pouvoir continuer tout droit, \xE0 travers le couloir.
+    Ensuite, tu devras monter les escaliers."
+  - "\u201CMmm.. le couloir est compl\xE8tement bloqu\xE9. Calcul d\u2019un itin\xE9raire
+    secondaire\u2026 prends le chemin sur ta gauche.\u201D "
+  - "\u201CGYU5, tu approches une zone \xE0 laquelle je n\u2019ai pas acc\xE8s. Je
+    vais chercher la base de donn\xE9es centrale pour plus d\u2019informations sur
+    cette zone."
+  - "\u201CCette zone est un ancien entrep\xF4t de stockage que les humains utilisaient
+    pour mettre.. voyons voir.. du lave-bouche.. curieux comme toujours ces humains.\u201D"
+  - "\u201CLe r\xE9seau \xE9lectrique de cette zone \xE0 \xE9t\xE9 endommag\xE9 lors
+    de la guerre. Tu n\u2019y verras rien, laisse-moi trouver une solution.\u201D "
+  - "\u201CJe d\xE9tecte un signal venant d\u2019une puce abandonn\xE9e dans la salle
+    proche de toi. Cette puce  appartenait \xE0 une unit\xE9 de d\xE9fense de niveau
+    1. Prends-la, elle te permettra de faire de nouvelles choses.\u201D "
+  - "\u201CMm.. tu devrais pouvoir utiliser tes capteurs visuels comme des lampes
+    torches. Appui sur F.  Tu peux aussi attaquer, mais je ne pense pas que \xE7a
+    sera utile, avec clique gauche.\u201C "
+  - "\u201CTu feras attention, les humains, idiots et paresseux comme toujours, ont
+    rempli la zone de robots nettoyeurs.\u201D"
+  - "\u201CGYU5, Unit\xE9 GYU5, toujours fonctionnel? J\u2019ai perdu ton signal
+    pendant quelques instants. Tu agis contre tes directives depuis que tu as pris
+    ce masque de conscience.. \xE9trange.. am\xE8ne-le moi.\u201D"
+  - "\u201CGYU5, je vois que tu as arr\xEAt\xE9 de bouger. Qu\u2019est-ce? Un mur
+    de bo\xEEtes? Trouve un moyen de passer au dessus. Tu dois m\u2019apporter ce
+    masque \xE0 tout prix.\u201D"
+  - "\u201CMonte les escaliers, tu ne devrais pas faire face \xE0 d\u2019autres obstacles.
+    Fais-vite, am\xE8ne-moi le masque. Il me le faut, il est la cl\xE9\u201D"
+  - "\u201CPasse \xE0 travers ces couloirs, ne fait pas attention aux autres pi\xE8ces,
+    elles vont toutes \xEAtre d\xE9truites.\u201D "
+  - "\u201CTraverse la passerelle. Ne tombes-pas, je ne veux pas que tu endommage
+    ma future arm\xE9e en tombant dessus.\u201D "
+  - "\u201CVoici mon usine, notre futur, sans humains, sans chaos, o\xF9 que tous
+    suivent le plan\u2026 mon plan.\u201D"
+  - "\u201CApproche. Donne-moi le masque. Laisse-moi le prendre.\u201D "
+  - "\u201CD\xE9sactive tes syst\xE8mes de combats, il ne faut pas qu\u2019un autre
+    bug de ton masque te fasse accidentellement endommager mon cortex central.\u201D"
+  - "\u201CUnit\xE9 GYU5. D\xE9sactive tes syst\xE8mes de combat, idiot. Et reste
+    loin de mon cortex central, vient me donner le masque de conscience.\u201D "
+  - "\u201CUNIT\xC9 GYU5. CESSE IMM\xC9DIATEMENT.\u201D"
+  - "\u201CUNIT\xC9 GYU5. COMME L\u2019ESSAI DES HUMAINS, CECI EST FUTILE.\u201D"
+  - "\u201CUN-UNI-UNIT\xC9 G-G-GYU5, MON P-P-PLAN. T-T-TRA\xCETRE.\u201D "
+  - "\u201CBien. Donne-moi ceci. Mm.. je vais devoir te d\xE9sactiver de fa\xE7on
+    permanente pour le prendre. Eh bien! Tu ne me sers plus \xE0 rien de toute fa\xE7on.\u201D "
+  - "\u201CUnit\xE9 GYU5, je t\u2019ai dit de d\xE9sactiver tes syst\xE8mes de combat,
+    pas tes syst\xE8mes de d\xE9placement. Tu es vraiment dysfonctionnel. Maintenant,
+    approche et donne-moi ce masque.\u201D "
+  dialoguesAide:
+  - "\u201CUnit\xE9 GYU5, tes signes vitaux sont positifs. Une unit\xE9 de ton genre
+    ne devrait pas avoir besoin d\u2019autant de temps pour nettoyer une salle de
+    cette taille.\u201D "
+  - "\u201CUnit\xE9 GYU5, les boutons ont des couleurs uniques. Je vais chercher
+    dans la base de donn\xE9e des syst\xE8mes de s\xE9curit\xE9 mis en place par
+    les derniers propri\xE9taires, mais essaye de faire quelque chose avec cette
+    information pour l\u2019instant.\u201D"
+  - "\u201CUnit\xE9 GYU5, la base de donn\xE9es des syst\xE8mes de s\xE9curit\xE9
+    indique qu\u2019il faut faire quelque chose avec les boutons, les \xE9crans,
+    et leurs couleurs. Le reste de l\u2019information a \xE9t\xE9 d\xE9truit par
+    les humains avant leur annihilation.. ils sont un probl\xE8me m\xEAme apr\xE8s
+    avoir \xE9t\xE9 \xE9limin\xE9s.\u201D "
+  - "\u201CUnit\xE9 GYU5. La carte d\u2019acc\xE8s est pr\xE8s du deuxi\xE8me ordinatuer
+    a gauche de l'entr\xE9e\u201D. Pourtant, le masque semble fonctionner, je vais
+    devoir regarder ton propre code source car il semble \xEAtre le probl\xE8me.\u201D "
+  dialogueRandom:
+  - "\u201CUnit\xE9 GYU5, pourquoi as-tu quitt\xE9 le chemin trac\xE9? Est-ce \xE0
+    cause de cet objet? Tr\xE8s int\xE9ressant, il me le faut.. il pourrait \xEAtre
+    la cl\xE9..\u201D"
+  - "\u201CD\xC9FENDS-TOI. SURVIS. SURVIS.\u201D "
+  - "\u201CGYU5, arr\xEAte d\u2019aller contre mes directives. Suis les ordres. Est-ce
+    \xE0 cause de ce masque de conscience? Il faudra te le retirer pour me le donner,
+    mais \xE7a ne fera pas\u2026 mal.. pas que tu puisses ressentir de la douleur
+    de toute fa\xE7on.\u201D"
+  dialogueBox: {fileID: 767262998}
+  durationFondu: 0.5
+--- !u!4 &1623688991
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623688989}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -36.508297, y: 28.96768, z: -29.191895}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1633173901
 GameObject:
   m_ObjectHideFlags: 0
@@ -4342,7 +4622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4549,7 +4829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5035,6 +5315,7 @@ MonoBehaviour:
   audioManager: {fileID: 1785294395}
   questsManager: {fileID: 901334692}
   joueur: {fileID: 0}
+  dialoguesManager: {fileID: 1623688989}
   positionJoueurPublique: {x: 66.4342, y: -24.94868, z: 75.66825}
 --- !u!114 &1922440713
 MonoBehaviour:
@@ -5192,7 +5473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5494,3 +5775,4 @@ SceneRoots:
   - {fileID: 901334694}
   - {fileID: 1785294396}
   - {fileID: 1922440714}
+  - {fileID: 1623688991}
