@@ -4464,6 +4464,7 @@ MonoBehaviour:
   dialoguesManager: {fileID: 1193001441}
   joueur: {fileID: 0}
   positionJoueurPublique: {x: 66.4342, y: -24.94868, z: 75.66825}
+  procedureReset: 0
 --- !u!114 &1922440713
 MonoBehaviour:
   m_ObjectHideFlags: 0
