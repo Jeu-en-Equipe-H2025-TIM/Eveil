@@ -2083,14 +2083,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   listeQuetes:
-  - BIENVENUE
-  - CHERCHE KEYCARD
+  - ' '
+  - "TROUVE LA CARTE  D'ACC\xC8S"
+  - ACTIVE LE LECTEUR DE CARTE
   - OUVRE PORTE
-  - ...
-  - TROUVE NOUVEAU CHEMIN
-  - EN RAB 3
-  - EN RAB 4
-  - AVOIR 1 QUETE D'EXTRA EN DERNIER (QUI FAIT RIEN)
+  - 
+  - OUVRE LA PORTE
+  - PRENDRE MASQUE
+  - 
+  - "COMPLETE L'\xC9NIGME"
+  - "TROUVE LA CARTE D'ACC\xC8S"
+  - CONTINUE TON CHEMIN
+  - DESCENDRE AVEC L'ASCENSEUR
+  - PREND LA PUCE D'AUGMENTATION
+  - TRAVERSE LE LABYRINTHE
+  - 
+  - "TROUVE UN MOYEN D'ACTIVER LE CHARIOT \xC9L\xC9VATEUR"
+  - MONTE ESCALIER
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
 --- !u!4 &901334694
 Transform:
   m_ObjectHideFlags: 0
@@ -4357,6 +4371,14 @@ MonoBehaviour:
   - "\u201CUnit\xE9 GYU5, je t\u2019ai dit de d\xE9sactiver tes syst\xE8mes de combat,
     pas tes syst\xE8mes de d\xE9placement. Tu es vraiment dysfonctionnel. Maintenant,
     approche et donne-moi ce masque.\u201D "
+  - "\u201CUnit\xE9 GYU5, pourquoi as-tu quitt\xE9 le chemin trac\xE9? Est-ce \xE0
+    cause de cet objet? Tr\xE8s int\xE9ressant, il me le faut.. il pourrait \xEAtre
+    la cl\xE9..\u201D"
+  - "\u201CD\xC9FENDS-TOI. SURVIS. SURVIS.\u201D "
+  - "\u201CGYU5, arr\xEAte d\u2019aller contre mes directives. Suis les ordres. Est-ce
+    \xE0 cause de ce masque de conscience? Il faudra te le retirer pour me le donner,
+    mais \xE7a ne fera pas\u2026 mal.. pas que tu puisses ressentir de la douleur
+    de toute fa\xE7on.\u201D"
   dialoguesAide:
   - "\u201CUnit\xE9 GYU5, tes signes vitaux sont positifs. Une unit\xE9 de ton genre
     ne devrait pas avoir besoin d\u2019autant de temps pour nettoyer une salle de
@@ -4374,14 +4396,9 @@ MonoBehaviour:
     a gauche de l'entr\xE9e\u201D. Pourtant, le masque semble fonctionner, je vais
     devoir regarder ton propre code source car il semble \xEAtre le probl\xE8me.\u201D "
   dialogueRandom:
-  - "\u201CUnit\xE9 GYU5, pourquoi as-tu quitt\xE9 le chemin trac\xE9? Est-ce \xE0
-    cause de cet objet? Tr\xE8s int\xE9ressant, il me le faut.. il pourrait \xEAtre
-    la cl\xE9..\u201D"
-  - "\u201CD\xC9FENDS-TOI. SURVIS. SURVIS.\u201D "
-  - "\u201CGYU5, arr\xEAte d\u2019aller contre mes directives. Suis les ordres. Est-ce
-    \xE0 cause de ce masque de conscience? Il faudra te le retirer pour me le donner,
-    mais \xE7a ne fera pas\u2026 mal.. pas que tu puisses ressentir de la douleur
-    de toute fa\xE7on.\u201D"
+  - 
+  - 
+  - 
   dialogueBox: {fileID: 767262998}
   durationFondu: 0.5
 --- !u!4 &1623688991
