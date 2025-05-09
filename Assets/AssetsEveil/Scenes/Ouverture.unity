@@ -2105,6 +2105,7 @@ MonoBehaviour:
   - 4
   - 5
   - 6
+  - 
 --- !u!4 &901334694
 Transform:
   m_ObjectHideFlags: 0
@@ -4379,6 +4380,11 @@ MonoBehaviour:
     \xE0 cause de ce masque de conscience? Il faudra te le retirer pour me le donner,
     mais \xE7a ne fera pas\u2026 mal.. pas que tu puisses ressentir de la douleur
     de toute fa\xE7on.\u201D"
+  - "\u201CUNIT\xC9 GYU5. CESSE IMM\xC9DIATEMENT.\u201D"
+  - "\u201CUNIT\xC9 GYU5. COMME L\u2019ESSAI DES HUMAINS, CECI EST FUTILE.\u201D"
+  - "\u201CUN-UNI-UNIT\xC9 G-G-GYU5, MON P-P-PLAN. T-T-TRA\xCETRE.\u201D"
+  - "\u201CBien. Donne-moi ceci. Hum.. je vais devoir te d\xE9sactiver de fa\xE7on
+    permanente pour le prendre. Eh bien! Tu ne me sers plus \xE0 rien de toute fa\xE7on.\u201D"
   dialoguesAide:
   - "\u201CUnit\xE9 GYU5, tes signes vitaux sont positifs. Une unit\xE9 de ton genre
     ne devrait pas avoir besoin d\u2019autant de temps pour nettoyer une salle de
@@ -4393,8 +4399,8 @@ MonoBehaviour:
     les humains avant leur annihilation.. ils sont un probl\xE8me m\xEAme apr\xE8s
     avoir \xE9t\xE9 \xE9limin\xE9s.\u201D "
   - "\u201CUnit\xE9 GYU5. La carte d\u2019acc\xE8s est pr\xE8s du deuxi\xE8me ordinatuer
-    a gauche de l'entr\xE9e\u201D. Pourtant, le masque semble fonctionner, je vais
-    devoir regarder ton propre code source car il semble \xEAtre le probl\xE8me.\u201D "
+    \xE0 gauche de l'entr\xE9e\u201D. Pourtant, le masque semble fonctionner, je
+    vais devoir regarder ton propre code source car il semble \xEAtre le probl\xE8me.\u201D "
   dialogueRandom:
   - 
   - 
@@ -5314,8 +5320,6 @@ MonoBehaviour:
   canvasPause: {fileID: 1633173901}
   canvasFin: {fileID: 1023825148}
   livreMenu: {fileID: 0}
-  canvasCredits: {fileID: 1203350728}
-  canvasReglages: {fileID: 1097496337}
 --- !u!114 &1922440712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5331,9 +5335,10 @@ MonoBehaviour:
   canvas: {fileID: 214689389}
   audioManager: {fileID: 1785294395}
   questsManager: {fileID: 901334692}
-  joueur: {fileID: 0}
   dialoguesManager: {fileID: 1623688989}
+  joueur: {fileID: 0}
   positionJoueurPublique: {x: 66.4342, y: -24.94868, z: 75.66825}
+  procedureReset: 0
 --- !u!114 &1922440713
 MonoBehaviour:
   m_ObjectHideFlags: 0

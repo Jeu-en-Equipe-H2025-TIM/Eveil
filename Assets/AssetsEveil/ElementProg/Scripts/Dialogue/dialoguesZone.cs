@@ -46,6 +46,9 @@ public class dialoguesZone : MonoBehaviour
             joueurDansZone = true;
             if (dialogueListeAssociee != "random")
             {
+                // On refresh dialogueManager aka reset ces fonctions aka on ne garde pas le timer de duree sur ecran 
+                dialogueManager.SetActive(false);
+                dialogueManager.SetActive(true);
                 Invoke("activerDialogue", delaisAvantDialogue); // On attend un delais avant de lancer le dialogue
             }
             else
@@ -94,5 +97,10 @@ public class dialoguesZone : MonoBehaviour
         {
             dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger(dialogueListeAssociee, positionDuTexteDansLaListe, dureeSurEcran);
         }
+    }
+
+    private void desactiverDialogue()
+    {
+
     }
 }

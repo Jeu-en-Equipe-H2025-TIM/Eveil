@@ -23,10 +23,6 @@ public class menus : MonoBehaviour
     public GameObject canvasPause;
     public GameObject canvasFin;
     public GameObject livreMenu;
-    public GameObject canvasCredits;
-    public GameObject canvasReglages;
-
-    private string ancienneScene;
 
 
     // Variables generales au script
@@ -45,9 +41,10 @@ public class menus : MonoBehaviour
     void Update()
     {
 
-        if (SceneManager.GetActiveScene().name == "MenuPrincipal") {
+        if (SceneManager.GetActiveScene().name == "MenuPrincipal")
+        {
             livreMenu = GameObject.Find("BinderComplet");
-            }
+        }
 
         // Ouverture du menu pause 
         if (Application.isPlaying)
@@ -71,7 +68,6 @@ public class menus : MonoBehaviour
 
     public void commencez()
     {
-        ancienneScene = SceneManager.GetActiveScene().name;
         Debug.Log("Bouton UI: Commencer le jeu");
         // Animation du livre du ferme 
         // ICI
@@ -84,11 +80,18 @@ public class menus : MonoBehaviour
 
     }
 
+    public void ouverture()
+    {
+
+        StartCoroutine(fonduChangerSceneDefondu("Ouverture"));
+
+    }
+
     public void accueil()
     {
         Debug.Log("Bouton UI: Accueil (menu principal)");
 
-        Debug.Log("Scene actuelle: "+SceneManager.GetActiveScene().name);
+        Debug.Log("Scene actuelle: " + SceneManager.GetActiveScene().name);
 
         // GetComponent<AudioSource>().PlayOneShot(sonUI);
 
@@ -97,24 +100,17 @@ public class menus : MonoBehaviour
         {
             Debug.Log("Accueil version en jeu");
             Invoke("pause", 0f);
-
-            // Deux facons qu'on peut quitter le jeu: Reglages et Menu principal
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-
             StartCoroutine(fonduChangerSceneDefondu("MenuPrincipal"));
         }
         else
         {
             Debug.Log("Accueil version hors-jeu");
-            StartCoroutine(fonduChangerSceneDefondu(ancienneScene));
+            StartCoroutine(fonduChangerSceneDefondu("MenuPrincipal"));
         }
-        ancienneScene = SceneManager.GetActiveScene().name;
     }
 
     public void credits()
     {
-        ancienneScene = SceneManager.GetActiveScene().name;
         Debug.Log("Bouton UI: Credits");
 
         // GetComponent<AudioSource>().PlayOneShot(sonUI);
@@ -129,13 +125,8 @@ public class menus : MonoBehaviour
 
     public void reglages()
     {
-        ancienneScene = SceneManager.GetActiveScene().name;
         Debug.Log("Bouton UI: Reglages");
         Debug.Log("Scene actuelle: " + SceneManager.GetActiveScene().name);
-
-        // Deux facons qu'on peut quitter le jeu: Reglages et Menu principal
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
 
         // GetComponent<AudioSource>().PlayOneShot(sonUI);
 
@@ -159,7 +150,6 @@ public class menus : MonoBehaviour
 
     public void quit()
     {
-        ancienneScene = SceneManager.GetActiveScene().name;
         Debug.Log("Bouton UI: Quitter le jeu (fermer le jeu)");
         // GetComponent<AudioSource>().PlayOneShot(sonUI);
 
@@ -168,9 +158,7 @@ public class menus : MonoBehaviour
         // ICI
         livreMenu.GetComponent<Animator>().SetTrigger("Quitter");
 
-        Application.Quit(); 
-
-
+        Application.Quit();
 
     }
 
@@ -212,7 +200,7 @@ public class menus : MonoBehaviour
     // CHANGEMENT DE SCENE (PARENT FONDU CHANGER SCENE DE FONDU) + 2 DEPENDANCES (FONDU AU NOIR ET FONDU AU VISIBLE)
     //
 
-    private IEnumerator fonduChangerSceneDefondu(string nomDeScene)
+    public IEnumerator fonduChangerSceneDefondu(string nomDeScene)
     {
         //GetComponent<AudioSource>().PlayOneShot(sonUI);
         yield return StartCoroutine(fonduAuNoir());
@@ -226,26 +214,17 @@ public class menus : MonoBehaviour
                 canvasIntro.SetActive(false);
                 canvasJeu.SetActive(true);
                 canvasFin.SetActive(false);
-                canvasReglages.SetActive(false);
 
                 break;
 
             case ("Credits"):
                 // A partir du menu principal: 2 animations
-                canvasCredits.SetActive(true);
-                canvasIntro.SetActive(false);
-                canvasJeu.SetActive(false);
-                canvasFin.SetActive(false);
 
 
                 break;
 
             case ("Reglages"):
                 // A partir du menu principal: 3 animations
-                canvasReglages.SetActive(true);
-                canvasIntro.SetActive(false);
-                canvasJeu.SetActive(false);
-                canvasFin.SetActive(false);
 
                 break;
 
@@ -254,8 +233,6 @@ public class menus : MonoBehaviour
                 canvasIntro.SetActive(true);
                 canvasJeu.SetActive(false);
                 canvasFin.SetActive(false);
-                canvasCredits.SetActive(false);
-                canvasReglages.SetActive(false);
 
                 break;
             case ("Fin"):
@@ -269,7 +246,6 @@ public class menus : MonoBehaviour
         }
 
         Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
         SceneManager.LoadScene(nomDeScene);
 
         fin = false;
