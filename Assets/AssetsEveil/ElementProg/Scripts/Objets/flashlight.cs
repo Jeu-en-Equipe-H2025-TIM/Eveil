@@ -35,6 +35,8 @@ public class flashlight : MonoBehaviour
         }
         else
         {
+
+            this.GetComponent<AudioSource>().Play();
             lumiere.enabled = true;
 
         }

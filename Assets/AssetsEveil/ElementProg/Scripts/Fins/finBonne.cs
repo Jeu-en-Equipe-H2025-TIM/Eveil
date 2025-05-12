@@ -21,6 +21,10 @@ public class finBonne : MonoBehaviour
     public int positionDuTexteDansLaListeLineaire3;
     public int dureeSurEcran3;
 
+    public AudioClip dialogueAudio1;
+    public AudioClip dialogueAudio2;
+    public AudioClip dialogueAudio3;
+
     private GameObject gameManager;
     void Start()
     {
@@ -51,17 +55,17 @@ public class finBonne : MonoBehaviour
 
         if (qteVie == 2)
         {
-            dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger("lineaire", positionDuTexteDansLaListeLineaire1, dureeSurEcran1);
+            dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger("lineaire", positionDuTexteDansLaListeLineaire1, dureeSurEcran1, dialogueAudio1);
         }
 
         if (qteVie == 1)
         {
-            dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger("lineaire", positionDuTexteDansLaListeLineaire2, dureeSurEcran2);
+            dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger("lineaire", positionDuTexteDansLaListeLineaire2, dureeSurEcran2, dialogueAudio2);
         }
 
         if (qteVie == 0)
         {
-            dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger("lineaire", positionDuTexteDansLaListeLineaire3, dureeSurEcran3);
+            dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger("lineaire", positionDuTexteDansLaListeLineaire3, dureeSurEcran3, dialogueAudio3);
         }
 
 

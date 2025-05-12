@@ -43,6 +43,9 @@ public class playerMovements : MonoBehaviour
 
     //
 
+    // Son 
+    private bool sonActif = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -85,14 +88,26 @@ public class playerMovements : MonoBehaviour
             deplacement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
             Vector3 directionLocale = transform.TransformDirection(deplacement);
 
+        // Son si on marche, sinon désactive
+
+        if (deplacement.magnitude > 0.1f && !sonActif)
+        {
+            sonActif = true;
+            this.GetComponent<AudioSource>().Play();
+        } else
+        {
+            sonActif = false;
+            this.GetComponent<AudioSource>().Stop();
+        }
+
             if (courseActive)
-            {
-                vitesseDeplacement = vitesseDeplacementBase * multiplicateurCourse;
-            }
-            else
-            {
-                vitesseDeplacement = vitesseDeplacementBase * multiplicateurMarche;
-            }
+        {
+            vitesseDeplacement = vitesseDeplacementBase * multiplicateurCourse;
+        }
+        else
+        {
+            vitesseDeplacement = vitesseDeplacementBase * multiplicateurMarche;
+        }
         //
 
 

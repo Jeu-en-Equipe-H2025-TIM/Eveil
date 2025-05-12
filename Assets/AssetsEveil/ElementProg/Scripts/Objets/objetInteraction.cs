@@ -74,7 +74,9 @@ public class objetInteraction : MonoBehaviour
                 Debug.Log("Je " + (this.gameObject.name) + " fait quelque chose");
 
                 // L'OBJET FAIT QUELQUE CHOSE
-                    
+
+                this.GetComponent<AudioSource>().Play();
+
                 // ASSOCIER A UNE ZONE!
                 if (estAssocierAUneZone)
                 {

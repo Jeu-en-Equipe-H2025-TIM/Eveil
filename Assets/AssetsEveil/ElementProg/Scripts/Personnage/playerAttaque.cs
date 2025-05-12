@@ -7,6 +7,8 @@ public class playerAttaque : MonoBehaviour
     public float attaqueCooldown;
     public float tempsAttaque;
     private bool pretAAttaquer = true;
+
+    public AudioClip sonAttaque; 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,6 +30,7 @@ public class playerAttaque : MonoBehaviour
             Invoke("peutAttaquerEncore", attaqueCooldown);
 
             // Son d'attaque: 
+            this.GetComponent<AudioSource>().PlayOneShot(sonAttaque);
 
             // Animation d'attaque: 
 

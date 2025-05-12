@@ -15,6 +15,8 @@ public class dialoguesZone : MonoBehaviour
     public float delaisAvantDialogue;
     public float dureeSurEcran;
 
+    public AudioClip dialogueAudio;
+
     private Boolean joueurDansZone = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -84,7 +86,7 @@ public class dialoguesZone : MonoBehaviour
 
         if (joueurDansZone)
         {
-            dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger(dialogueListeAssociee, positionDuTexteDansLaListe, dureeSurEcran);
+            dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger(dialogueListeAssociee, positionDuTexteDansLaListe, dureeSurEcran, dialogueAudio);
             // Boucle infinie tant qu'on ne l'arrete pas manuellement
             StartCoroutine(boucleDialogueRandom());
         }
@@ -95,7 +97,7 @@ public class dialoguesZone : MonoBehaviour
     {
         if (joueurDansZone)
         {
-            dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger(dialogueListeAssociee, positionDuTexteDansLaListe, dureeSurEcran);
+            dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger(dialogueListeAssociee, positionDuTexteDansLaListe, dureeSurEcran, dialogueAudio);
         }
     }
 

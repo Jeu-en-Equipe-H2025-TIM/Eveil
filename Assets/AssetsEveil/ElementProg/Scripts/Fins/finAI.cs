@@ -10,7 +10,6 @@ public class finAI : MonoBehaviour
     [SerializeField] private GameObject gameManager;
 
 
-
     //// Tous les managers 
     //private GameObject Canvas;
     //private GameObject audiosManager;
@@ -22,6 +21,7 @@ public class finAI : MonoBehaviour
     private GameObject dialoguesManager;
     public int positionDuTexteDansLaListeLineaire1;
     public int dureeSurEcran1;
+    public AudioClip dialogueAudio;
 
 
     void Start()
@@ -41,7 +41,7 @@ public class finAI : MonoBehaviour
             }
 
             // Dialogue de fin 
-            dialoguesManager.GetComponent<dialoguesManager>().dialogueTrigger("lineaire", positionDuTexteDansLaListeLineaire1, dureeSurEcran1);
+            dialoguesManager.GetComponent<dialoguesManager>().dialogueTrigger("lineaire", positionDuTexteDansLaListeLineaire1, dureeSurEcran1, dialogueAudio);
 
 
             Invoke("finDuJeu", delaisAvantFinDuJeu);

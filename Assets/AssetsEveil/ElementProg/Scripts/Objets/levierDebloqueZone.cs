@@ -138,6 +138,7 @@ public class levierDebloqueZone : MonoBehaviour
 
             // L'OBJET FAIT QUELQUE CHOSE
             Invoke("animationBouton", 0f);
+            this.GetComponent<AudioSource>().Play();
 
 
             if (propertyInfo != null)

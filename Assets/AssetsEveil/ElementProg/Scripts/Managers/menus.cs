@@ -24,6 +24,9 @@ public class menus : MonoBehaviour
     public GameObject canvasFin;
     public GameObject livreMenu;
 
+    public GameObject canvasCine1;
+    public GameObject canvasCineNoir;
+    public GameObject canvasCineUI;
 
     // Variables generales au script
     private Boolean fin = false; // Empecher de spammer / faire une partie du script en boucle
@@ -210,9 +213,12 @@ public class menus : MonoBehaviour
         {
             case ("Jeu"):
                 // A partir du menu principal: 1 animation
-
+                Invoke("ApparaitUiInGame", 19f);
+                canvasCine1.SetActive(true);
+                canvasCineUI.SetActive(true);
+                canvasCineNoir.SetActive(true);
                 canvasIntro.SetActive(false);
-                canvasJeu.SetActive(true);
+                canvasJeu.SetActive(false);
                 canvasFin.SetActive(false);
 
                 break;
@@ -230,12 +236,18 @@ public class menus : MonoBehaviour
 
                 break;
             case ("MenuPrincipal"):
+                canvasCineUI.SetActive(false);
+                canvasCine1.SetActive(false);
+                canvasCineNoir.SetActive(false);
                 canvasIntro.SetActive(true);
                 canvasJeu.SetActive(false);
                 canvasFin.SetActive(false);
 
                 break;
             case ("Fin"):
+                canvasCineUI.SetActive(false);
+                canvasCine1.SetActive(false);
+                canvasCineNoir.SetActive(false);
                 canvasIntro.SetActive(false);
                 canvasJeu.SetActive(false);
                 canvasFin.SetActive(true);
@@ -252,6 +264,12 @@ public class menus : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
         StartCoroutine(fonduAuVisible());
+    }
+
+    // Fonction pour faire apparaitre le ui du jeu après la première cinématique
+    public void ApparaitUiInGame()
+    {
+        canvasJeu.SetActive(true);
     }
 
     private IEnumerator fonduAuNoir()

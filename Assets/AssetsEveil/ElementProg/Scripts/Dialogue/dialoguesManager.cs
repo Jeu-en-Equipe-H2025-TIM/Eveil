@@ -25,8 +25,11 @@ public class dialoguesManager : MonoBehaviour
     // Temps apparition/disparition des dialogues
     public float durationFondu;
 
+    // Audiosource
+    public AudioSource audioSource;
 
-    public void dialogueTrigger(String liste, int index, float duree) // Liste dans laquelle on pige, où on pige, et durée du dialogue (temps sur l'écran)
+
+    public void dialogueTrigger(String liste, int index, float duree, AudioClip audio) // Liste dans laquelle on pige, où on pige, et durée du dialogue (temps sur l'écran)
     {
         switch (liste)
         {
@@ -51,6 +54,10 @@ public class dialoguesManager : MonoBehaviour
 
         // On affiche le texte de la liste de dialogues pertinente
         dialogueBox.GetComponent<TextMeshProUGUI>().text = dialogueActif;
+
+        // Audio
+        audioSource.GetComponent­<AudioSource>().PlayOneShot(audio);
+
         StartCoroutine(dialogueApparait());
         Invoke("finDialogue", duree);
 
