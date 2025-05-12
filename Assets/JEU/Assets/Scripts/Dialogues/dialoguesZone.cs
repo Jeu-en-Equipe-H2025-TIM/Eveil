@@ -4,20 +4,25 @@ using UnityEngine;
 
 public class dialoguesZone : MonoBehaviour
 {
-
+    // Variables
     public GameObject dialogueManager;
+    // Texte
     public Boolean dialogueLineaire;
     public Boolean dialogueAide;
     public Boolean dialogueRandom;
     private String dialogueListeAssociee;
     public int positionDuTexteDansLaListe;
+
+    // Settings du texte
     public float delaisAvantDialogue;
     public float dureeSurEcran;
+    public bool estUneHallucination;
 
     private Boolean joueurDansZone = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        // On choisi la liste selon la boolean sélectionnée (par dev)
         dialogueManager = GameObject.Find("dialoguesManager");
         if (dialogueLineaire)
         {
@@ -37,6 +42,7 @@ public class dialoguesZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // Si c'est le joueur, on check si c'est un dialogue random ou non
         if (other.gameObject.tag == "Player")
         {
             joueurDansZone = true;
@@ -56,6 +62,7 @@ public class dialoguesZone : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        // Quand on quitte, on arrête le dialogue 
         if (other.gameObject.tag == "Player")
         {
             joueurDansZone = false;
@@ -80,7 +87,7 @@ public class dialoguesZone : MonoBehaviour
 
         if (joueurDansZone)
         {
-            dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger(dialogueListeAssociee, positionDuTexteDansLaListe, dureeSurEcran);
+            dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger(dialogueListeAssociee, positionDuTexteDansLaListe, dureeSurEcran, estUneHallucination);
             // Boucle infinie tant qu'on ne l'arrete pas manuellement
             StartCoroutine(boucleDialogueRandom());
         }
@@ -89,14 +96,11 @@ public class dialoguesZone : MonoBehaviour
 
     private void activerDialogue()
     {
+        // Appeler la fonction dans dialogueManager
         if (joueurDansZone)
         {
-            dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger(dialogueListeAssociee, positionDuTexteDansLaListe, dureeSurEcran);
+            dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger(dialogueListeAssociee, positionDuTexteDansLaListe, dureeSurEcran, estUneHallucination);
         }
     }
 
-    private void desactiverDialogue()
-    {
-
-    }
 }

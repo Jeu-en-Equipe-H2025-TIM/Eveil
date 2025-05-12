@@ -8,13 +8,22 @@ public class questsManager : MonoBehaviour
     // Hub pour toutes les quetes (similaires à gererAccesZones)
 
     public List<String> listeQuetes = new List<String>();
+    public Color couleurDuTexte;
 
 
 
 
 
-    public void queteTrigger(int delais)
+    public void queteTrigger(int delais, bool estUneHallucination)
     {
+        if (estUneHallucination)
+        {
+            couleurDuTexte = Color.red;
+        } else
+        {
+            couleurDuTexte = Color.white;
+        }
+
         Debug.Log("QM : Quete qui va se faire delete dans " + delais);
         Invoke("queteUpdate", delais);
     }

@@ -22,6 +22,7 @@ public class objetInteraction : MonoBehaviour
     public bool estAssocierAUneQuete;
     public int delaisTriggerQueteEnSecondes;
     [SerializeField] private string queteAssociee;
+    public bool relierAUneHallucination;
 
     private PropertyInfo propertyInfo;
     private FieldInfo fieldInfo;
@@ -35,6 +36,7 @@ public class objetInteraction : MonoBehaviour
     private String dialogueListeAssociee;
     public int positionDuTexteDansLaListe;
     public float dureeSurEcran;
+    public bool dialogueDeHallucination;
 
 
     private void Start()
@@ -111,7 +113,7 @@ public class objetInteraction : MonoBehaviour
                     
                     if (questsManager.GetComponent<questsManager>().listeQuetes[0] == queteAssociee)
                     {
-                        questsManager.GetComponent<questsManager>().queteTrigger(delaisTriggerQueteEnSecondes);
+                        questsManager.GetComponent<questsManager>().queteTrigger(delaisTriggerQueteEnSecondes, relierAUneHallucination);
                     }
                     else
                     {
@@ -144,7 +146,7 @@ public class objetInteraction : MonoBehaviour
                         Debug.Log("Je: " + this.gameObject.name + " n'a pas de liste de dialogues associée! Tu as oublié de checkmark l'une des trois options!");
                     }
 
-                    dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger(dialogueListeAssociee, positionDuTexteDansLaListe, dureeSurEcran);
+                    dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger(dialogueListeAssociee, positionDuTexteDansLaListe, dureeSurEcran, dialogueDeHallucination);
                 }
 
                 // Apres avoir pick up la carte, la d�truire

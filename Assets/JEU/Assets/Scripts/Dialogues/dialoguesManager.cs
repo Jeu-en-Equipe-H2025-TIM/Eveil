@@ -17,7 +17,9 @@ public class dialoguesManager : MonoBehaviour
     // Liste des dialogues random (1 time, called randomly)
     public List<String> dialogueRandom = new List<String>();
 
+    // Dialogue que l'on met
     private String dialogueActif;
+    private Color couleurDuTexte = Color.white; // Blanc par défaut (celle du bot)
 
     // Boite de dialogue
     public GameObject dialogueBox;
@@ -26,8 +28,17 @@ public class dialoguesManager : MonoBehaviour
     public float durationFondu;
 
 
-    public void dialogueTrigger(String liste, int index, float duree) // Liste dans laquelle on pige, où on pige, et durée du dialogue (temps sur l'écran)
+    public void dialogueTrigger(String liste, int index, float duree, bool hallucination) // Liste dans laquelle on pige, où on pige, et durée du dialogue (temps sur l'écran)
     {
+
+        if (hallucination)
+        {
+            couleurDuTexte = Color.red; // Rouge pour les hallucinations
+        } else
+        {
+            couleurDuTexte = Color.white; // Blanc par dséfaut (celle du bot)
+        }
+
         switch (liste)
         {
             case "lineaire":
@@ -68,6 +79,7 @@ public class dialoguesManager : MonoBehaviour
     {
         // Nos variables
         float tempsPasser = 0;
+        dialogueBox.GetComponent<TextMeshProUGUI>().color = couleurDuTexte; // On set la couleur du texte selon celle que l'on veut
         Color couleur = dialogueBox.GetComponent<TextMeshProUGUI>().color;
 
         // Ça n'apparait que quand déjà invisible (déjà à 0), mais au cas où

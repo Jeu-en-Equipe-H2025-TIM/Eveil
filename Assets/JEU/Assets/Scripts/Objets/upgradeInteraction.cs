@@ -22,6 +22,7 @@ public class upgradeInteraction : MonoBehaviour
     public bool estAssocierAUneQuete;
     public int delaisTriggerQueteEnSecondes;
     [SerializeField] private string queteAssociee;
+    public bool relierAUneHallucination;
 
     private PropertyInfo propertyInfo;
     private FieldInfo fieldInfo;
@@ -115,7 +116,7 @@ public class upgradeInteraction : MonoBehaviour
 
                     if (questsManager.GetComponent<questsManager>().listeQuetes[0] == queteAssociee)
                     {
-                        questsManager.GetComponent<questsManager>().queteTrigger(delaisTriggerQueteEnSecondes);
+                        questsManager.GetComponent<questsManager>().queteTrigger(delaisTriggerQueteEnSecondes, relierAUneHallucination);
                     }
                     else
                     {

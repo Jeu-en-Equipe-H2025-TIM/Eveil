@@ -3,6 +3,7 @@ using UnityEngine;
 public class queteTriggerZone : MonoBehaviour
 {
     public GameObject questManager;
+    public bool relierAUneHallucination;
     public int delaisTriggerQueteEnSecondes;
 
     [SerializeField] private string queteAssociee;
@@ -28,7 +29,7 @@ public class queteTriggerZone : MonoBehaviour
 
             if (questManager.GetComponent<questsManager>().listeQuetes[0] == queteAssociee)
             {
-                questManager.GetComponent<questsManager>().queteTrigger(delaisTriggerQueteEnSecondes);
+                questManager.GetComponent<questsManager>().queteTrigger(delaisTriggerQueteEnSecondes, relierAUneHallucination);
             } else
             {
                 Debug.Log("Le joueur a skip une quete..?");

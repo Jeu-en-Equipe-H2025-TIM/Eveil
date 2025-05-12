@@ -177,7 +177,7 @@ public class playerHallucinations : MonoBehaviour
 
         if (questManager.GetComponent<questsManager>().listeQuetes[0] == queteAssociee)
         {
-            questManager.GetComponent<questsManager>().queteTrigger(0); // 0 car on gere deja le delais dans le onTriggerEnter
+            questManager.GetComponent<questsManager>().queteTrigger(0, true); // 0 car on gere deja le delais dans le onTriggerEnter
         }
         else
         {
