@@ -26,10 +26,18 @@ public class finBonne : MonoBehaviour
     public AudioClip dialogueAudio3;
 
     private GameObject gameManager;
+
+    // Animation
+    public GameObject animationCamera;
+    public GameObject joueur;
+    public GameObject modele;
+    private Animator animatorModele;
+
     void Start()
     {
         gameManager = GameObject.Find("gameManager");
         dialogueManager = GameObject.Find("dialoguesManager");
+        animatorModele = modele.GetComponent<Animator>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -56,16 +64,19 @@ public class finBonne : MonoBehaviour
         if (qteVie == 2)
         {
             dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger("lineaire", positionDuTexteDansLaListeLineaire1, dureeSurEcran1, dialogueAudio1);
+            animatorModele.SetTrigger("no");
         }
 
         if (qteVie == 1)
         {
             dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger("lineaire", positionDuTexteDansLaListeLineaire2, dureeSurEcran2, dialogueAudio2);
+            animatorModele.SetTrigger("no");
         }
 
         if (qteVie == 0)
         {
             dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger("lineaire", positionDuTexteDansLaListeLineaire3, dureeSurEcran3, dialogueAudio3);
+            animatorModele.SetTrigger("no");
         }
 
 
@@ -101,7 +112,9 @@ public class finBonne : MonoBehaviour
 
                 Debug.Log("Fin bonne! On active la fin dans X secondes!");
 
-
+                // Trucs d'animations
+                gameManager.GetComponent<menus>().fondus(26f);
+                Invoke("animation", 1f);
                 Invoke("finDuJeu", delaisAvantFinDuJeu);
             }
         }
@@ -119,5 +132,14 @@ public class finBonne : MonoBehaviour
 
         gameManager.GetComponent<gameManager>().procedureReset = true; // Lance la procedure de reset (qui va delete tous les anciens game managers) au changement de scene
         gameManager.GetComponent<menus>().ouverture(); // Change la scene
+    }
+
+
+
+    private void animation()
+    {
+        this.GetComponent<MeshRenderer>().enabled = false;
+        animationCamera.SetActive(true);
+        joueur.SetActive(false);
     }
 }

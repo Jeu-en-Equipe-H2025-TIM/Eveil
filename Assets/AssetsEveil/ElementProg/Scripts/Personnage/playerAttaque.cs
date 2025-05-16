@@ -8,11 +8,15 @@ public class playerAttaque : MonoBehaviour
     public float tempsAttaque;
     private bool pretAAttaquer = true;
 
+    // Animations
+    public GameObject modele;
+    private Animator animator;
+
     public AudioClip sonAttaque; 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        animator = modele.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -33,11 +37,13 @@ public class playerAttaque : MonoBehaviour
             this.GetComponent<AudioSource>().PlayOneShot(sonAttaque);
 
             // Animation d'attaque: 
+            animator.SetTrigger("attaque");
 
             // On active la hitbox
             attaqueHitbox.SetActive(true);
             // On désactive la hitbox après 0.5 secondes
             Invoke("desactiverHitbox", tempsAttaque);
+
         }
     }
 

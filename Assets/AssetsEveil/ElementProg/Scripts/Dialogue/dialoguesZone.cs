@@ -17,6 +17,12 @@ public class dialoguesZone : MonoBehaviour
 
     public AudioClip dialogueAudio;
 
+
+    // Animation
+    public bool EstRelierAUneAnimation;
+    public GameObject modeleDeLAnimation;
+    public string triggerAnimation;
+
     private Boolean joueurDansZone = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -51,6 +57,7 @@ public class dialoguesZone : MonoBehaviour
                 // On refresh dialogueManager aka reset ces fonctions aka on ne garde pas le timer de duree sur ecran 
                 dialogueManager.SetActive(false);
                 dialogueManager.SetActive(true);
+
                 Invoke("activerDialogue", delaisAvantDialogue); // On attend un delais avant de lancer le dialogue
             }
             else
@@ -98,11 +105,11 @@ public class dialoguesZone : MonoBehaviour
         if (joueurDansZone)
         {
             dialogueManager.GetComponent<dialoguesManager>().dialogueTrigger(dialogueListeAssociee, positionDuTexteDansLaListe, dureeSurEcran, dialogueAudio);
+
+            if (EstRelierAUneAnimation)
+            {
+                modeleDeLAnimation.GetComponent<Animator>().SetTrigger(triggerAnimation);
+            }
         }
-    }
-
-    private void desactiverDialogue()
-    {
-
     }
 }

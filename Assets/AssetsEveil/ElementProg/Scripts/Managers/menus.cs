@@ -203,6 +203,26 @@ public class menus : MonoBehaviour
     // CHANGEMENT DE SCENE (PARENT FONDU CHANGER SCENE DE FONDU) + 2 DEPENDANCES (FONDU AU NOIR ET FONDU AU VISIBLE)
     //
 
+    public void fondus(float duree)
+    {
+        Debug.Log("On fait les fondus avec duree = " + duree);
+        StartCoroutine(fondusAnimation(duree));
+
+    }
+
+    private IEnumerator fondusAnimation(float duree)
+    {
+        canvasJeu.SetActive(false);
+        yield return StartCoroutine(fonduAuNoir());
+        yield return StartCoroutine(fonduAuVisible());
+        yield return new WaitForSeconds(duree);
+        yield return StartCoroutine(fonduAuNoir());
+        yield return StartCoroutine(fonduAuVisible());
+        canvasJeu.SetActive(true);
+    }
+
+
+
     public IEnumerator fonduChangerSceneDefondu(string nomDeScene)
     {
         //GetComponent<AudioSource>().PlayOneShot(sonUI);
@@ -272,7 +292,7 @@ public class menus : MonoBehaviour
         canvasJeu.SetActive(true);
     }
 
-    private IEnumerator fonduAuNoir()
+    public IEnumerator fonduAuNoir()
     {
         ecranNoir.gameObject.SetActive(true);
         float tempsPasser = 0;
@@ -292,7 +312,7 @@ public class menus : MonoBehaviour
         imageNoire.color = couleur;
     }
 
-    private IEnumerator fonduAuVisible()
+    public IEnumerator fonduAuVisible()
     {
         ecranNoir.gameObject.SetActive(true);
         float tempsPasser = 0;

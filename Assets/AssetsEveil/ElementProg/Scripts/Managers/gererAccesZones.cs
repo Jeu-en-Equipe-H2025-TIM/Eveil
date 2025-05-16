@@ -49,6 +49,7 @@ public class gererAccesZones : MonoBehaviour
     public bool debloqueForklift = false;
     public bool accesForkliftMonte = false;
 
+    public bool rien = false;
 
 
 

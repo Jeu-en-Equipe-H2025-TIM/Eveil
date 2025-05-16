@@ -18,9 +18,18 @@ public class scriptTextTest : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        
             EndCheck();
+        
     }
 
+    /*private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            EndCheck();
+        }
+    }*/
 
     void EndCheck()
     {

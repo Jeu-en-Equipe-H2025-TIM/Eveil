@@ -41,7 +41,10 @@ public class playerMovements : MonoBehaviour
     public float rotationVerticaleCameraAngleMax;
     float rotationHorizontale;
 
-    //
+    // Animations
+    private Animator animator;
+    private bool seDeplace = false;
+    public GameObject modele;
 
     // Son 
     private bool sonActif = false;
@@ -56,6 +59,8 @@ public class playerMovements : MonoBehaviour
         gameManager = GameObject.Find("gameManager");
         characterController.enabled = false;
         Invoke("placeJoueur", 0.5f);
+
+        animator = modele.GetComponent<Animator>();
 
 
     }
@@ -88,19 +93,28 @@ public class playerMovements : MonoBehaviour
             deplacement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
             Vector3 directionLocale = transform.TransformDirection(deplacement);
 
-        // Son si on marche, sinon désactive
 
-        if (deplacement.magnitude > 0.1f && !sonActif)
+        // Si on se déplace
+        if (deplacement.magnitude > 0.1f)
         {
-            sonActif = true;
-            this.GetComponent<AudioSource>().Play();
-        } else
+            if (!seDeplace)
+            {
+                seDeplace = true;
+                Debug.Log("Deplacement animation");
+                animator.SetBool("marche", true);
+            }
+        }
+        else // On ne se déplace pas
         {
-            sonActif = false;
-            this.GetComponent<AudioSource>().Stop();
+             if (seDeplace)
+            {
+                seDeplace = false;
+                Debug.Log("Deplacement animation ARRET");
+                animator.SetBool("marche", false);
+            }
         }
 
-            if (courseActive)
+        if (courseActive)
         {
             vitesseDeplacement = vitesseDeplacementBase * multiplicateurCourse;
         }
@@ -146,15 +160,6 @@ public class playerMovements : MonoBehaviour
         //
     }
 
-    public void OnControllerColliderHit(ControllerColliderHit hit)
-    {
-        // Non-trigger
-    }
-
-    public void OnTriggerEnter(Collider other)
-    {
-        // Trigger
-    }
 
     public void placeJoueur()
     {
